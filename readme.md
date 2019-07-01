@@ -28,3 +28,4 @@ $ npm run имя_скрипта
 $ yarn имя_скрипта
 ```
 # https-sayneone.github.io
+# sayneone.github.io
