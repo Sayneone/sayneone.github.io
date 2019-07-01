@@ -1,0 +1,22 @@
+section.about-section
+	.container
+		.about-section__face
+			.about-section__face-foto
+				+image('content/about-section/me.jpg','about-section__foto-img')
+			.about-section__face-data
+				table
+					- var data = [['Проживаю:', 'Воронеж'],['Возраст:', '23 года'],['Родился:', '21 декабря 1995']];
+					each row in data
+						tr
+							td #{row[0]}
+							td #{row[1]}
+		.about-section__desc
+			h3 
+				span.about-section__desc-hello Привет, меня зовут
+				span.about-section__desc-name Тимофеев Андрей
+				span.about-section__desc-text.text 
+					p Я занимаюсь разработкой современных сайтов и приложений. Мне нравится делать интересные и современные проектыdiv
+					p Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут все классно и красиво!
+
+
+			

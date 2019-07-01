@@ -1,0 +1,16 @@
+section.reviews 
+	h4.reviews__title.title Что обо мне говорят
+	.reviews__slider-btns
+		button.reviews__btn.reviews__prew-btn(type='button')
+		button.reviews__btn.reviews__next-btn(type='button')
+	ul.reviews__slider
+		- for (var i = 0; i<4; i++)
+				li.reviews__slider-item
+					p.reviews__comment.text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!
+					.reviews__personality
+						.reviews__personality-foto
+							+image('content/about-section/me.jpg','.reviews__slider-img')
+						.reviews__personality-desc
+							span.reviews__personality-name Ковальчук Дмитрий
+							span.reviews__personality-occu Основатель LoftSchool
+						

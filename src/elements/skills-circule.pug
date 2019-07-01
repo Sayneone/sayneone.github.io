@@ -1,0 +1,11 @@
+mixin skills-circule(item)
+	svg(viewBox='0 0 140 140')
+		circle.circle--internal(cx="70" cy="70" r="60")
+		- var dashLenght = 377
+		- var deshOffset = (100-item.val)*dashLenght/100
+		circle.circle--external(cx="70" cy="70" r="60" stroke="url(#gradient)" 
+		style="stroke-dashoffset:"+dashOffset+"; stroke-deshharray:"+deshLenght+";"
+		transform:'rotate (180 70 70)')
+		text(x="50%" text-achor="middle" class="skils__circles-text text" by=".3em") 
+		#{item.name}
+		include svg-gradient
