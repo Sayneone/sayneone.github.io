@@ -1,21 +1,21 @@
 @font-face {
   font-family: 'SourceSansPro-Regular';
-  src: url("../../fonts/SansPro-Regular/SourceSansPro-Regular.eot");
-  src: url("../../fonts/SansPro-Regular/SourceSansPro-Regular.eot?#iefix") format('embedded-opentype'), url("../../fonts/SansPro-Regular/SourceSansPro-Regular.svg#SourceSansPro-Regular") format('svg'), url("../../fonts/SansPro-Regular/SourceSansPro-Regular.ttf") format('truetype'), url("../../fonts/SansPro-Regular/SourceSansPro-Regular.woff") format('woff'), url("../../fonts/SansPro-Regular/SourceSansPro-Regular.woff2") format('woff2');
+  src: url("fonts/SansPro-Regular/SourceSansPro-Regular.eot");
+  src: url("fonts/SansPro-Regular/SourceSansPro-Regular.eot?#iefix") format('embedded-opentype'), url("fonts/SansPro-Regular/SourceSansPro-Regular.svg#SourceSansPro-Regular") format('svg'), url("fonts/SansPro-Regular/SourceSansPro-Regular.ttf") format('truetype'), url("fonts/SansPro-Regular/SourceSansPro-Regular.woff") format('woff'), url("fonts/SansPro-Regular/SourceSansPro-Regular.woff2") format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'SourceSansPro-SemiBold';
-  src: url("../../fonts/SansPro-SemiBold/SourceSansPro-SemiBold.eot");
-  src: url("../../fonts/SansPro-SemiBold/SourceSansPro-SemiBold.eot?#iefix") format('embedded-opentype'), url("../../fonts/SansPro-SemiBold/SourceSansPro-SemiBold.svg#SourceSansPro-SemiBold") format('svg'), url("../../fonts/SansPro-SemiBold/SourceSansPro-SemiBold.ttf") format('truetype'), url("../../fonts/SansPro-SemiBold/SourceSansPro-SemiBold.woff") format('woff'), url("../../fonts/SansPro-SemiBold/SourceSansPro-SemiBold.woff2") format('woff2');
+  src: url("fonts/SansPro-SemiBold/SourceSansPro-SemiBold.eot");
+  src: url("fonts/SansPro-SemiBold/SourceSansPro-SemiBold.eot?#iefix") format('embedded-opentype'), url("fonts/SansPro-SemiBold/SourceSansPro-SemiBold.svg#SourceSansPro-SemiBold") format('svg'), url("fonts/SansPro-SemiBold/SourceSansPro-SemiBold.ttf") format('truetype'), url("fonts/SansPro-SemiBold/SourceSansPro-SemiBold.woff") format('woff'), url("fonts/SansPro-SemiBold/SourceSansPro-SemiBold.woff2") format('woff2');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'SourceSansPro-Bold';
-  src: url("../../fonts/SansPro-Bold/SourceSansPro-Bold.eot");
-  src: url("../../fonts/SansPro-Bold/SourceSansPro-Bold.eot?#iefix") format('embedded-opentype'), url("../../fonts/SansPro-Bold/SourceSansPro-Bold.svg#SourceSansPro-Bold") format('svg'), url("../../fonts/SansPro-Bold/SourceSansPro-Bold.ttf") format('truetype'), url("../../fonts/SansPro-Bold/SourceSansPro-Bold.woff") format('woff'), url("../../fonts/SansPro-Bold/SourceSansPro-Bold.woff2") format('woff2');
+  src: url("fonts/SansPro-Bold/SourceSansPro-Bold.eot");
+  src: url("fonts/SansPro-Bold/SourceSansPro-Bold.eot?#iefix") format('embedded-opentype'), url("fonts/SansPro-Bold/SourceSansPro-Bold.svg#SourceSansPro-Bold") format('svg'), url("fonts/SansPro-Bold/SourceSansPro-Bold.ttf") format('truetype'), url("fonts/SansPro-Bold/SourceSansPro-Bold.woff") format('woff'), url("fonts/SansPro-Bold/SourceSansPro-Bold.woff2") format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -411,8 +411,8 @@ table tr:last-child td {
   min-height: 24px;
   -webkit-mask-size: 24px 24px;
           mask-size: 24px 24px;
-  -webkit-mask-image: url("../../img/icons/checkbox.svg");
-          mask-image: url("../../img/icons/checkbox.svg");
+  -webkit-mask-image: url("img/icons/checkbox.svg");
+          mask-image: url("img/icons/checkbox.svg");
   cursor: pointer;
   background-color: #1fb6ff;
 }
@@ -421,7 +421,7 @@ table tr:last-child td {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/checkbox.svg");
+    background-image: url("img/icons/checkbox.svg");
   }
 }
 .checkbox-btn .knob:before {
@@ -446,8 +446,8 @@ table tr:last-child td {
   min-height: 24px;
   -webkit-mask-size: 24px 24px;
           mask-size: 24px 24px;
-  -webkit-mask-image: url("../../img/icons/checkbox-empty.svg");
-          mask-image: url("../../img/icons/checkbox-empty.svg");
+  -webkit-mask-image: url("img/icons/checkbox-empty.svg");
+          mask-image: url("img/icons/checkbox-empty.svg");
   cursor: pointer;
   background-color: #e0e6ed;
 }
@@ -456,7 +456,7 @@ table tr:last-child td {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/checkbox-empty.svg");
+    background-image: url("img/icons/checkbox-empty.svg");
   }
 }
 .tooltip__btn {
@@ -766,7 +766,7 @@ template {
   width: 178px;
   height: 38px;
   font-family: SourceSansPro-SemiBold;
-  background-image: url("../../img/icons/logo.svg");
+  background-image: url("img/icons/logo.svg");
 }
 .header__interface {
   width: 100%;
@@ -805,8 +805,8 @@ template {
   min-height: 20px;
   -webkit-mask-size: 20px 20px;
           mask-size: 20px 20px;
-  -webkit-mask-image: url("../../img/icons/cart.svg");
-          mask-image: url("../../img/icons/cart.svg");
+  -webkit-mask-image: url("img/icons/cart.svg");
+          mask-image: url("img/icons/cart.svg");
   cursor: pointer;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -814,7 +814,7 @@ template {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/cart.svg");
+    background-image: url("img/icons/cart.svg");
   }
 }
 .menu {
@@ -978,8 +978,8 @@ template {
   min-height: 85px;
   -webkit-mask-size: 43px 85px;
           mask-size: 43px 85px;
-  -webkit-mask-image: url("../../img/icons/arrow-b.svg");
-          mask-image: url("../../img/icons/arrow-b.svg");
+  -webkit-mask-image: url("img/icons/arrow-b.svg");
+          mask-image: url("img/icons/arrow-b.svg");
   cursor: pointer;
   background-color: #8392a6;
   cursor: pointer;
@@ -989,7 +989,7 @@ template {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/arrow-b.svg");
+    background-image: url("img/icons/arrow-b.svg");
   }
 }
 .slider-arrows .slider-arrowPrew-mask:before {
@@ -1003,8 +1003,8 @@ template {
   min-height: 85px;
   -webkit-mask-size: 43px 85px;
           mask-size: 43px 85px;
-  -webkit-mask-image: url("../../img/icons/arrow-a.svg");
-          mask-image: url("../../img/icons/arrow-a.svg");
+  -webkit-mask-image: url("img/icons/arrow-a.svg");
+          mask-image: url("img/icons/arrow-a.svg");
   cursor: pointer;
   background-color: rgba(255,255,255,0.4);
   cursor: pointer;
@@ -1014,7 +1014,7 @@ template {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/arrow-a.svg");
+    background-image: url("img/icons/arrow-a.svg");
   }
 }
 .slider-arrows .slider-arrowPrew-mask:hover:after {
@@ -1040,8 +1040,8 @@ template {
   min-height: 85px;
   -webkit-mask-size: 43px 85px;
           mask-size: 43px 85px;
-  -webkit-mask-image: url("../../img/icons/arrow-b.svg");
-          mask-image: url("../../img/icons/arrow-b.svg");
+  -webkit-mask-image: url("img/icons/arrow-b.svg");
+          mask-image: url("img/icons/arrow-b.svg");
   cursor: pointer;
   position: absolute;
   top: 0;
@@ -1053,7 +1053,7 @@ template {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/arrow-b.svg");
+    background-image: url("img/icons/arrow-b.svg");
   }
 }
 .slider-arrows .slider-arrowNext-mask:before {
@@ -1067,8 +1067,8 @@ template {
   min-height: 85px;
   -webkit-mask-size: 43px 85px;
           mask-size: 43px 85px;
-  -webkit-mask-image: url("../../img/icons/arrow-a.svg");
-          mask-image: url("../../img/icons/arrow-a.svg");
+  -webkit-mask-image: url("img/icons/arrow-a.svg");
+          mask-image: url("img/icons/arrow-a.svg");
   cursor: pointer;
   background-color: rgba(255,255,255,0.4);
   cursor: pointer;
@@ -1078,7 +1078,7 @@ template {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/arrow-a.svg");
+    background-image: url("img/icons/arrow-a.svg");
   }
 }
 .slider-arrows .slider-arrowNext-mask:hover:after {
@@ -1349,8 +1349,8 @@ template {
   min-height: 50px;
   -webkit-mask-size: 25px 50px;
           mask-size: 25px 50px;
-  -webkit-mask-image: url("../../img/icons/arrow-b.svg");
-          mask-image: url("../../img/icons/arrow-b.svg");
+  -webkit-mask-image: url("img/icons/arrow-b.svg");
+          mask-image: url("img/icons/arrow-b.svg");
   cursor: pointer;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -1358,7 +1358,7 @@ template {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/arrow-b.svg");
+    background-image: url("img/icons/arrow-b.svg");
   }
 }
 .listing-sec__slider-arrows-next:hover {
@@ -1380,8 +1380,8 @@ template {
   min-height: 50px;
   -webkit-mask-size: 25px 50px;
           mask-size: 25px 50px;
-  -webkit-mask-image: url("../../img/icons/arrow-b.svg");
-          mask-image: url("../../img/icons/arrow-b.svg");
+  -webkit-mask-image: url("img/icons/arrow-b.svg");
+          mask-image: url("img/icons/arrow-b.svg");
   cursor: pointer;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -1392,7 +1392,7 @@ template {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/arrow-b.svg");
+    background-image: url("img/icons/arrow-b.svg");
   }
 }
 .listing-sec__slider-arrows-prew:hover {
@@ -1796,8 +1796,8 @@ template {
   min-height: 24px;
   -webkit-mask-size: 24px 24px;
           mask-size: 24px 24px;
-  -webkit-mask-image: url("../../img/icons/star.svg");
-          mask-image: url("../../img/icons/star.svg");
+  -webkit-mask-image: url("img/icons/star.svg");
+          mask-image: url("img/icons/star.svg");
   cursor: pointer;
   background-color: #d9dee4;
 }
@@ -1806,7 +1806,7 @@ template {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/star.svg");
+    background-image: url("img/icons/star.svg");
   }
 }
 .rating__star.active:after {
@@ -1831,8 +1831,8 @@ template {
   min-height: 24px;
   -webkit-mask-size: 24px 24px;
           mask-size: 24px 24px;
-  -webkit-mask-image: url("../../img/icons/star.svg");
-          mask-image: url("../../img/icons/star.svg");
+  -webkit-mask-image: url("img/icons/star.svg");
+          mask-image: url("img/icons/star.svg");
   cursor: pointer;
   background-color: #ffc82c;
 }
@@ -1841,7 +1841,7 @@ template {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/star.svg");
+    background-image: url("img/icons/star.svg");
   }
 }
 .rating__star.rated:after {
@@ -1866,8 +1866,8 @@ template {
   min-height: 24px;
   -webkit-mask-size: 24px 24px;
           mask-size: 24px 24px;
-  -webkit-mask-image: url("../../img/icons/star.svg");
-          mask-image: url("../../img/icons/star.svg");
+  -webkit-mask-image: url("img/icons/star.svg");
+          mask-image: url("img/icons/star.svg");
   cursor: pointer;
   background-color: #ffc82c;
 }
@@ -1876,7 +1876,7 @@ template {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/star.svg");
+    background-image: url("img/icons/star.svg");
   }
 }
 .footer {
