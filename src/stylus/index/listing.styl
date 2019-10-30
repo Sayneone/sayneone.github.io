@@ -1,0 +1,73 @@
+  .listing-sec
+    margin-bottom 40px
+    .container
+        position relative
+    .section-title
+        margin-bottom 20px
+    &__title-quantity
+        color $color_lilGray
+    &__slider-arrows
+        display flex
+        position absolute
+        top -10px
+        right 0
+        &-next
+            display flex
+            background-color $color_lilGray
+            icon_size_mask(25px, 50px, '../../img/icons/arrow-b.svg')
+            &:hover 
+                background-color $color_lessGray
+        &-prew
+            display flex
+            background-color $color_lilGray
+            icon_size_mask(25px, 50px, '../../img/icons/arrow-b.svg')
+            transform rotate(180deg)
+            &:hover 
+                background-color $color_lessGray
+    &__list-item
+        display flex
+        justify-content space-between
+        flex-wrap wrap
+    &__item
+        width 280px
+        margin-bottom 37px
+        &-img
+            position relative
+            cursor pointer
+            margin-bottom 10px
+            img 
+                display block
+                object-fit cover
+                height 157px
+                width 280px
+                border-radius 6px
+            &-time
+                display flex
+                justify-content center
+                align-items center
+                color white
+                font-size 14px
+                padding 2px 7px
+                opacity 0.9
+                position absolute
+                bottom 5px
+                right 5px
+                background-color $color_lessGray
+        &-title
+            color #3B4858
+            font-family 'SourceSansPro-SemiBold'
+            font-size 16px
+            font-weight 600
+            line-height 20px
+            margin-bottom 2px
+        &-author
+            color #3B4859
+            font-family 'SourceSansPro-Regular'
+            font-size 14px
+            line-height 20px
+            margin-bottom 5px
+        &-desc
+            color $color_lilGray
+            font-family 'SourceSansPro-Regular'
+            font-size 14px
+            line-height 18px

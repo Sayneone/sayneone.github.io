@@ -1,0 +1,310 @@
+// LINKS STYLES
+.link
+    display inline-block
+    font-size 18px
+    text-decoration none
+    cursor pointer
+    &--a
+        cursor pointer
+        transition 0.3s
+        color #8392A6
+        &:hover
+            color rgba(59,72,88,0.9)
+        &:active
+            color #1FB6FF
+        &.bold
+            font-weight bold
+    &--b   
+        cursor pointer
+        transition 0.3s 
+        color #1FB6FF
+        &:hover
+            color #08A5F1
+        &:active
+            color #08A5F1
+        &.bold
+            font-weight bold
+
+// BUTTON'S STYLES
+.btn 
+    font-weight 700
+    transition .3s
+    text-align center
+    cursor pointer
+.btn--a
+    border 1px solid $color_smallRiff
+    border-radius 6px
+    padding-top 9px
+    padding-bottom 11px
+    background-color $color_smallRiff
+    color white
+    &:hover
+        background-color $color_bigRiff
+        border-color $color_bigRiff
+    &.dissable
+        background-color $color_lilGray
+        border-color $color_lilGray
+        opacity 0.3
+        cursor auto
+
+.btn--b
+    border 1px solid $color_likeGray2
+    border-radius 6px
+    padding-top 9px
+    padding-bottom 11px
+    color $color_lilGray
+    &:hover
+        border-color $color_lessGray
+        color $color_lessGray
+    &.dissable
+        border-color $color_lilGray
+        opacity 0.3
+        cursor auto
+
+
+// SELECT-LIST STYLES
+.select-list
+    display flex
+    justify-content center
+    flex-direction column
+    width 320px
+    position relative
+    &__header
+        font-family SourceSansPro-SemiBold
+        padding-left 15.5px
+        position relative
+        height 40px
+        border 1px solid #E3E9EF	
+        border-radius 6px
+        line-height 36px
+        color #B8C1CC
+        transition 0.3s
+        &:before
+            content ''
+            position absolute
+            right 15px
+            top 45%
+            border 7px solid transparent
+            border-top 8px solid #8392a6
+        &:hover
+            color $color_lessGray
+            border-color $color_lessGray
+    &__list
+        display none
+        position absolute
+        border 1px solid #E3E9EF
+        border-radius 6px
+        height 200px
+        overflow scroll
+        top: 40px
+        width 100%
+        background-color white
+        &.open 
+            display block
+        &-item
+            font-family SourceSansPro-SemiBold
+            padding-left 15.5px
+            line-height 36px
+            color #8392A6
+            width 100%
+            &hover 
+                background-color #F9F9F9
+                color $color_darkGray
+// SWITCH BUTTON STYLES
+.switch-btn
+    height 30px
+    .checkbox 
+        position absolute
+        opacity 0
+        &:checked + .knobs > .on
+            border 1px solid $color_smallRiff
+            background-color $color_smallRiff
+            line-height 25px
+            width 50%
+            color white
+            height 100%
+        &:checked + .knobs > .off
+            background-color transparent
+            border 1px solid #e0e6ed
+            color #8392a6
+            line-height 25px
+            width 50%
+            height 100%
+        &:checked:hover + .knobs > .on 
+            background-color $color_bigRiff
+            border-color $color_bigRiff
+        &:checked:hover + .knobs > .off
+            background-color transparent
+            color $color_lessGray
+            border 1px solid #8392a6
+    .knobs
+        height 30px
+        width 139px
+        display flex
+        position relative
+        &:hover > .on
+            border-color $color_lessGray
+            color $color_lessGray
+        &:hover > .off
+            background-color $color_bigRiff
+            border-color $color_bigRiff
+            border 1px solid $#8392a6      
+        .on
+            border-bottom-left-radius 6px
+            border-top-left-radius 6px
+            border 1px solid #e0e6ed
+            color #8392a6
+            line-height 25px
+            width 50%
+            height 100%    
+        .off
+            border-bottom-right-radius 6px
+            border-top-right-radius 6px
+            border 1px solid $color_smallRiff
+            background-color $color_smallRiff
+            line-height 25px
+            width 50%
+            color white
+            height 100%     
+// CHECKBOX STYLES
+.checkbox-btn
+    .checkbox 
+        position absolute
+        opacity 0
+        &:checked + .knob 
+            &:before  
+                opacity 1 
+            &:after  
+                opacity 0
+    .knob
+        position relative
+        width 24px
+        height 24px    
+        &:hover &:after
+            background-color $color_biglRiff  
+        &:after
+            position absolute
+            content ""
+            display block
+            top 50%
+            transform translateY(-50%)
+            opacity 1
+            transition .3s
+            icon_size_mask(24px, 24px, '../../img/icons/checkbox.svg')
+            background-color $color_smallRiff   
+        &:before
+            position absolute
+            content ""
+            display block
+            top 50%
+            transform translateY(-50%)
+            opacity 0
+            transition .3s
+            icon_size_mask(24px, 24px, '../../img/icons/checkbox-empty.svg')
+            background-color $color_likeGray2
+
+          
+// TOOLTIPS STYLES
+.tooltip
+    &__btn
+        width 22px
+        height 22px
+        background-color rgba(131,146,166,0.5)
+        position relative
+        &:hover 
+            background-color #8392A6
+        &:hover:after
+            display block
+        &:hover:before 
+            display block
+
+        &:after 
+            display none
+            position absolute
+            content attr(tooltip)
+            padding 10px 14px 10px 14px
+            font-size 14px
+            text-align center
+            color rgba(59,72,88,0.9)
+            border-radius 6px
+            background-color #FFFFFF	
+            box-shadow 0 2px 4px 0 rgba(59,72,88,0.4)
+            white-space nowrap
+            overflow hidden
+            text-overflow ellipsis
+            z-index 10
+            left 50%
+            transform translate(-50%, -60px)
+            color: black
+        &:before
+            display none
+            z-index 11
+            content '▴'
+            position absolute
+            left 50%
+            transform translate(-50%, -43px)rotate(180deg)
+            color white
+            font-size: 53px
+            text-shadow: 0px -2px 3px rgba(59,72,88,0.4)
+//INPUTS & TEXTASREA STYLES
+textarea 
+    overflow auto
+    font-size 18px
+    line-height 23px
+    color #8392A6
+    resize none
+    border 1px solid #8392A6
+    border-radius 3px
+    transition .3s
+    padding 12px 15px 
+    opacity 0.6
+    &:focus 
+        border-color $color_lessGray
+        color $color_lessGray
+        opacity 1
+
+input
+    font-size 18px
+    line-height 23px
+    color #8392A6
+    border 1px solid #8392A6
+    border-radius 3px
+    transition .3s
+    padding 9px 15px 8px 15px 
+    opacity 0.6
+    &:focus 
+        border-color $color_lessGray
+        color $color_lessGray
+        opacity 1
+
+
+h1,  
+h2,
+h3,
+h4,
+h5,
+h6
+    margin 0px
+.h1 
+    color $color_darkGrey
+    font-family SourceSansPro-Regular
+    font-size 42px
+    font-weight 600
+    line-height 52px
+.h2 
+    color $color_lessGrey
+    font-family SourceSansPro-Regular
+    font-size 24px
+    font-weight 600
+    line-height 31px
+
+.p,
+p
+    color $color_lessGray
+    font-family SourceSansPro-Regular
+    font-size 16px
+    line-height 24px
+
+.section-title
+    font-family SourceSansPro-bold
+    text-transform uppercase

@@ -1,0 +1,46 @@
+icon_size_mask(width, height, image_url)
+  display block
+  content ''
+  height height
+  width width
+  background-size width height
+  min-width width
+  min-height height
+  mask-size width height
+  mask-image url(image_url)
+  cursor pointer
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+    background-color transparent !important
+    mask-image none !important
+    background-image url(image_url)
+
+full_size()
+  width 100%
+  height 100%
+
+back_img()
+  background-size cover
+  background-repeat no-repeat
+  background-position 50%
+
+abs_center_height()
+  "calc(50% - %s/2)" % @height
+
+abs_center_width()
+  "calc(50% - %s/2)" % @width
+
+icon_fill(color)
+  svg
+    //width 100%
+    height 100%
+    path
+      fill color
+center()
+  display flex
+  justify-content center
+  align-items center
+
+space-between()
+  display flex
+  justify-content space-between
+  align-items center

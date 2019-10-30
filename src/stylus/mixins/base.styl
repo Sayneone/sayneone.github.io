@@ -1,0 +1,136 @@
+// variables 
+
+// COLORS 
+
+$color_darkGray =  #3B4858
+$color_lessGray =  rgba(59,72,88,0.9)
+$color_lilGray =  #8392A6
+$color_bigRiff =  #08A5F1
+$color_smallRiff = #1FB6FF
+$color_prpl = #7E5CEF
+$color_grass = #12CE66
+$color_red = #FF4949
+$color_orange = #FF7849
+$color_moreOrange = #FFA055g
+$color_yellow = #FFC82C
+$color_likeGray = #E1E8F0
+$color_likeGray2 = #E0E6ED
+$color_likeWhite = #F9FAFC
+
+*:focus
+    outline none
+
+*
+  font-family: SourceSansPro-Regular
+
+*,
+*::before,
+*::after
+  box-sizing border-box
+
+// Wrappers
+.wrapper
+  min-width 1180px
+  max-width 1440px
+  height 100%
+  margin 0 auto
+  
+.container 
+  width 1180px
+  height 100%
+  margin 0 auto
+  &.small
+    width 780px
+
+// Fonts
+
+a
+  text-decoration none
+  font-style inherit
+  font-weight inherit
+  font-stretch inherit
+  font-size inherit
+  line-height inherit
+  font-family inherit
+  color inherit
+  &:focus,
+  &:active
+    outline none
+
+::selection
+  color white
+  background-color $color_smallRiff
+h2
+  font-family: SourceSansPro-SemiBold
+  color $color_darkGray		
+  font-size 42px	
+  font-weight 600
+  line-height 52px
+  margin 10px 0
+  
+h3
+  font-family: SourceSansPro-SemiBold
+  color $color_darkGray		
+  font-size 24px	
+  font-weight 600
+  line-height 31px
+  margin 7.5px 0
+  
+h4
+  font-family: SourceSansPro-SemiBold
+  color $color_darkGray		
+  font-size 18px	
+  font-weight 600
+  line-height 30px
+  margin 2px 0
+
+h5
+  font-family: SourceSansPro-SemiBold
+  color $color_darkGray
+  font-size 22px	
+  font-weight 600
+  line-height 28px
+  margin 1.9px 0
+
+p
+  font-family: SourceSansPro-Regular
+  color $color_lessGray
+  font-size 16px
+  line-height 24px
+
+ul
+  list-style none
+  padding 0
+  margin 0
+ul li
+  position relative
+
+ul li.native:before
+  content: "⁃"
+  position absolute
+  left -23px
+  top 2px
+
+ol
+  padding-left: 30px
+ol li.native
+  padding-left 10px
+
+table 
+    width 100%
+    border-spacing 0px
+    th 
+      border-bottom 2px solid $color_likeGray
+      text-align left
+      line-height 35px
+      padding-left 18px
+    td
+      border-bottom 1px solid $color_likeGray
+      line-height 35px
+      padding-top 19px
+      padding-left 18px
+      vertical-align: baseline;
+      color $color_darkGray
+      font-size 16px
+    tr:last-child td
+        border none

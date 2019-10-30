@@ -1,0 +1,54 @@
+.tabs-sec
+    margin-bottom 81px
+    .container
+        position relative
+    .section-title
+        margin-bottom 29px
+    &__controls
+        display flex
+        margin-bottom 20px
+        &-item
+            font-family SourceSansPro-Bold
+            border 0
+            margin-right 40px
+            font-size 18px
+            line-height 23px
+            text-transform uppercase
+            color #8392A6
+            &:hover
+                color rgba(59,72,88,0.9)
+            &.active 
+                color #1FB6FF
+
+    &__list ul
+        display none
+        justify-content space-between
+        flex-wrap wrap
+        &.active
+            display flex
+    &__item
+        text-align left
+        display flex
+        flex-direction column
+        &-img
+            position relative
+            cursor pointer
+            margin-bottom 10px
+            img 
+                display block
+                object-fit cover
+                height 208px
+                width 180px
+                border-radius 6px
+        &-title
+            color #3B4858
+            font-family 'SourceSansPro-SemiBold'
+            font-size 16px
+            font-weight 600
+            line-height 20px
+            margin-bottom 5px
+        &-author
+            color #3B4859
+            font-family 'SourceSansPro-Regular'
+            font-size 14px
+            line-height 18px
