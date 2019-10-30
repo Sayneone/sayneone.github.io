@@ -2116,8 +2116,8 @@ template {
   min-height: 15px;
   -webkit-mask-size: 7.2px 15px;
           mask-size: 7.2px 15px;
-  -webkit-mask-image: url("../../img/icons/facebook.svg");
-          mask-image: url("../../img/icons/facebook.svg");
+  -webkit-mask-image: url("img/icons/facebook.svg");
+          mask-image: url("img/icons/facebook.svg");
   cursor: pointer;
   background-color: #8392a6;
 }
@@ -2126,7 +2126,7 @@ template {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/facebook.svg");
+    background-image: url("img/icons/facebook.svg");
   }
 }
 .footer .container .socials__list .google {
@@ -2140,8 +2140,8 @@ template {
   min-height: 14.27px;
   -webkit-mask-size: 14.97px 14.27px;
           mask-size: 14.97px 14.27px;
-  -webkit-mask-image: url("../../img/icons/google.svg");
-          mask-image: url("../../img/icons/google.svg");
+  -webkit-mask-image: url("img/icons/google.svg");
+          mask-image: url("img/icons/google.svg");
   cursor: pointer;
   background-color: #8392a6;
 }
@@ -2150,7 +2150,7 @@ template {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/google.svg");
+    background-image: url("img/icons/google.svg");
   }
 }
 .footer .container .socials__list .twitter {
@@ -2164,8 +2164,8 @@ template {
   min-height: 15.5px;
   -webkit-mask-size: 12.02px 15.5px;
           mask-size: 12.02px 15.5px;
-  -webkit-mask-image: url("../../img/icons/twitter.svg");
-          mask-image: url("../../img/icons/twitter.svg");
+  -webkit-mask-image: url("img/icons/twitter.svg");
+          mask-image: url("img/icons/twitter.svg");
   cursor: pointer;
   background-color: #8392a6;
 }
@@ -2174,7 +2174,7 @@ template {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/twitter.svg");
+    background-image: url("img/icons/twitter.svg");
   }
 }
 .footer .container .socials .title {
