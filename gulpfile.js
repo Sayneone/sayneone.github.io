@@ -131,11 +131,11 @@ gulp.task('default', ['stylus', 'pug', 'browser-sync',],
   });
 
 //tasks for relaod page after compile pug and stylus
-gulp.task('pug-watch', ['pug'], function(done) {
+gulp.task('pug-watch', ['copyhtml'], function(done) {
   browserSync.reload();
   done();
 });
-gulp.task('stylus-watch', ['stylus'], function(done) {
+gulp.task('stylus-watch', ['copycss'], function(done) {
   browserSync.reload();
   done();
 });
