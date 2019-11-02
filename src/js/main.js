@@ -55,10 +55,6 @@ jQuery(document).ready(function($) {
     })
 });
 // VALIDATION 
-var  a = $('.form__review-textarea').val().length != 0
-var  b = $('.form__review-input-name').val().length != 0
-
-
 $('.form').on('keyup',function(){
     if( $('.last-sec label__textarea textarea').val().length != 0 &&  
     $('.last-sec label__name input').val().length != 0 &&
