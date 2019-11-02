@@ -10,8 +10,8 @@ $(document).ready(function(){
 
     // Listning slider
     $('.listing-sec__list').slick({
-      prevArrow: $ ('.listing-sec__slider-arrows-next'),
-      nextArrow: $ ('.listing-sec__slider-arrows-prew'),
+      prevArrow: $ ('.listing-sec__slider-arrows .arrow__next'),
+      nextArrow: $ ('.listing-sec__slider-arrows .arrow__prew'),
       }); 
     $(".js-range-slider").ionRangeSlider({
       type: "double",

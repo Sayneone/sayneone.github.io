@@ -97,23 +97,25 @@ p
   color $color_lessGray
   font-size 16px
   line-height 24px
+  margin-bottom 20px
 
 ul
   list-style none
   padding 0
   margin 0
-ul li
+ul.native li
   position relative
+  margin-left: 30px
 
-ul li.native:before
+ul.native li:before
   content: "⁃"
   position absolute
   left -23px
   top 2px
 
-ol
+ol.native
   padding-left: 30px
-ol li.native
+ol.native li
   padding-left 10px
 
 table 
@@ -134,3 +136,7 @@ table
       font-size 16px
     tr:last-child td
         border none
+
+span 
+  display inline-block
+  

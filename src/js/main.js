@@ -39,18 +39,18 @@ $(function(){
 });
 
 // RATING STARS
-var star = $('.rating__star')
-var inputValue = $('.rating__input')
+var star = $('.rating__stars .star')
+var inputValue = $('.form__rating #formRating')
 
 jQuery(document).ready(function($) {
     star.hover(function() {
         $(this).addClass('active');
-        $(this).parent().find('.rating__star:lt(' + $(this).index() + ')').addClass('active');
+        $(this).parent().find('.star:lt(' + $(this).index() + ')').addClass('active');
     }).mouseout(function() {
-            $(this).parent().find('.rating__star').removeClass('active');
+            $(this).parent().find('.star').removeClass('active');
     }).click(function(){
-        $(this).parent().find('.rating__star').removeClass('rated');
-        $(this).parent().find('.rating__star:lt(' + ($(this).index() + 1) + ')').addClass('rated');
+        $(this).parent().find('.star').removeClass('rated');
+        $(this).parent().find('.star:lt(' + ($(this).index() + 1) + ')').addClass('rated');
         inputValue.attr('value',   + ($(this).index() + 1)  )
     })
 });
@@ -60,13 +60,13 @@ var  b = $('.form__review-input-name').val().length != 0
 
 
 $('.form').on('keyup',function(){
-    if( $('.form__review-textarea').val().length != 0 &&  
-    $('.form__review-input-email').val().length != 0 &&
-    $('.form__review-input-name').val().length != 0 )
+    if( $('.last-sec label__textarea textarea').val().length != 0 &&  
+    $('.last-sec label__name input').val().length != 0 &&
+    $('.last-sec label__email input').val().length != 0 )
     {
-        $('.form__btn button').removeClass('dissable')
+        $('.form__btn button').removeAttr('disabled')
     } else {
-        $('.form__btn button').addClass('dissable')
+        $('.form__buttons button').attr('disabled')
     }
 })
 

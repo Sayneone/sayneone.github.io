@@ -1,0 +1,16 @@
+doctype html
+html(lang="eng")
+    head
+        include mixins/meta
+        include mixins/styles
+        title Template list
+    body
+        include mixins/mixins
+        main.list-page
+            .wrapper
+                include header/header
+                .list-sec
+                    include list/nav
+                    include list/showcase
+                include footer/footer
+        include mixins/scripts

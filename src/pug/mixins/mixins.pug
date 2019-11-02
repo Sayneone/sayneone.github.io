@@ -17,3 +17,11 @@ mixin tabs-sec__item(url, title, author, desc)
         .tabs-sec__item-title=  title
         .tabs-sec__item-author= author
 
+
+- var listSecCategories = [{name : 'category 1' },{ name : 'category 2' },{ name : 'category 3' },{ name : 'category 4' },{ name : 'category 5' }]
+mixin list-sec__nav(title)
+    aside.list-sec__nav-list
+        h5.list-sec__nav-title= title
+        ul
+        for i in listSecCategories
+            li.list-sec__nav-link= i.name

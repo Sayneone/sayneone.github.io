@@ -1,0 +1,69 @@
+.last-sec
+    margin-bottom 134px
+    .container
+        display flex
+    &__form
+        width 783px
+        border-top 1px solid#E6E6E6
+        margin-right 20px
+        padding-top 34px
+        & > span
+            margin-bottom 26px
+        @import 'rating'
+        .form__group
+            display flex
+            flex-direction row
+            justify-content space-between
+            .label__textarea
+                width 100%
+                height 269px
+                margin-bottom 40px
+                textarea           
+                    height 269px
+                    width 100%
+            .label__name
+                height 66px
+                width 379px
+                input 
+                    height 40px
+                    width inherit
+            .label__email
+                height 66px
+                width 375px
+                input 
+                    height 40px
+                    width 375px
+
+            .form__rating span,
+            .label__textarea span,
+            .label__name span,
+            .label__email span
+                color #3B4858
+                font-size 16px	
+                line-height 20px
+                font-weight normal
+                margin-bottom 6px
+                &:after
+                    content ' *'
+                    color red
+        .form__buttons
+            display flex
+            flex-direction column
+            margin-top 30px
+            button
+                margin-top 40px
+                width 175px
+            .label__checkbox
+                display flex
+                align-items center
+                .checkbox-btn
+                    margin-right: 6.5px
+    &__wigets
+        .wigets__sc, 
+        .wigets__inst
+            height 376px	
+            width 380px
+        .wigets__inst
+            margin-bottom 16px
+            overflow hidden
+
