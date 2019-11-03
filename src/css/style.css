@@ -2426,8 +2426,8 @@ template {
   min-height: 28px;
   -webkit-mask-size: 28px 28px;
           mask-size: 28px 28px;
-  -webkit-mask-image: url("../../img/icons/view-switch_linear.svg");
-          mask-image: url("../../img/icons/view-switch_linear.svg");
+  -webkit-mask-image: url("../img/icons/view-switch_linear.svg");
+          mask-image: url("../img/icons/view-switch_linear.svg");
   cursor: pointer;
   margin-right: 16px;
 }
@@ -2436,7 +2436,7 @@ template {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/view-switch_linear.svg");
+    background-image: url("../img/icons/view-switch_linear.svg");
   }
 }
 .showcase .showcase__sorting-menu .sorting-menu__view-switch .view-switch__item.view-switch__item_grid {
@@ -2450,8 +2450,8 @@ template {
   min-height: 28px;
   -webkit-mask-size: 28px 28px;
           mask-size: 28px 28px;
-  -webkit-mask-image: url("../../img/icons/view-switch_grid.svg");
-          mask-image: url("../../img/icons/view-switch_grid.svg");
+  -webkit-mask-image: url("../img/icons/view-switch_grid.svg");
+          mask-image: url("../img/icons/view-switch_grid.svg");
   cursor: pointer;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -2459,7 +2459,7 @@ template {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
-    background-image: url("../../img/icons/view-switch_grid.svg");
+    background-image: url("../img/icons/view-switch_grid.svg");
   }
 }
 .showcase .showcase__list {

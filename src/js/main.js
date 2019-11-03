@@ -92,22 +92,15 @@ $('.view-switch__item_grid').on('click', function(){
 
 // LIST CRITERIA SELECTS 
 
-$('.criteria__item_display').on('click', function(){
-    console.log('тык')
+$('.criteria__item_sort .criteria__select').on('click', function(){
+    var firstText = $(this).children('.select__header').html();
     $(this).find('.select__list').toggle();
-    $(this).find('.select__item').on('click', function(){
-        var text =  $(this).text()
+    $(this).find('.select__item a').on('click', function(){
+        var text = $(this).html();
+        $(this).text(firstText);
+        $(this).closest('.criteria__select').children('.select__header').html(text);
         $(this).find('.select__list').hide();
-        $(this).closest('.select__header').text(text);
-    })
-});
-$('.criteria__item_sort').on('click', function(){
-    console.log('тык')
-    $(this).find('.select__list').toggle();
-    $(this).find('.select__item').on('click', function(){
-        var text = $(this).text();
-        $(this).closest('.select__header').text(text);
-        $(this).find('.select__list').hide();
+        return this;
     });
 });
 
