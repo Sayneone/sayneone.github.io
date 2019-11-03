@@ -1,0 +1,169 @@
+.showcase
+    display flex
+    flex-direction column
+    justify-content center
+    margin-bottom 63px
+    width 880px
+    .showcase__title
+        height 60px
+        width 880px
+        background-color $color_likeWhite
+        text-transform uppercase
+        display inline-block
+        color $color_darkGray	
+        font-family SourceSansPro-Bold
+        font-size 22px	font-weight bold
+        line-height 28px
+        padding 16px 20px
+        text-align left
+        margin-bottom 10px
+    .showcase__sorting-menu
+        display flex
+        align-items center
+        justify-content space-between
+        margin-bottom 23px
+        .sorting-menu__criteria
+            display flex
+            .criteria__item
+                margin-right 88px
+                .criteria__title
+                    text-transform uppercase
+                    color $color__moreGray
+                    font-size 18px 
+                    line-height 23px
+                    margin-right 13px
+                .select__header
+                    text-transform uppercase
+                    display inline-block
+                    position relative
+                    color $color_darkGray
+                    font-size 18px	
+                    line-height 23px
+                    &:after
+                        content ''
+                        position absolute
+                        right -15px
+                        top 40%
+                        border 5px solid transparent
+                        border-top 5px solid $color_darkGray
+                    .select__list
+                        display none
+        .sorting-menu__view-switch
+            display flex
+            .view-switch__item
+                background-color $color_lilGray
+                display flex
+                &:hover 
+                    background-color $color_lessGray
+                &.active
+                    background-color $color_bigRiff
+                    &:hover 
+                        background-color $color_smallRiff
+            .view-switch__item_linear
+                icon_size_mask(28px, 28px, '../../../img/icons/view-switch_linear.svg')
+                margin-right 16px
+            .view-switch__item.view-switch__item_grid
+                icon_size_mask(28px, 28px, '../../../img/icons/view-switch_grid.svg')
+    .showcase__list
+        display flex
+        justify-content space-between
+        .list__item 
+            .item__img
+                img 
+                    display block
+                    object-fit cover
+                    height 189px
+                    width 281px
+                    border-radius 6px
+            .item__info
+                display flex
+                flex-direction column
+                .info__title
+                    cursor pointer
+                    color #3B4858	
+                    font-family SourceSansPro-SemiBold	
+                    font-size 22px	
+                    font-weight 600	
+                    line-height 28px
+                .info__desc
+                    color $color_lessGray	
+                    font-size 18px	
+                    line-height 24px
+                .info__price
+                    color #FF4949
+                    font-family SourceSansPro-SemiBold	
+                    font-size 18px	
+                    font-weight 600	
+                    line-height 23px
+    .showcase__list_grid
+        flex-wrap wrap
+        margin-bottom 40px
+        .list__item 
+            width 281px
+            margin-bottom 40px
+            .item__img
+                margin-bottom 10px
+            .item__info
+                .info__title
+                    margin-bottom 5px
+                .info__rating
+                    display none
+                .info__desc
+                    display none
+                .info__price
+                    margin-bottom 18px
+    .showcase__list_linear
+        flex-wrap wrap
+        margin-bottom 40px
+        .list__item 
+            width 100%
+            display flex
+            margin-bottom 40px
+            .item__img
+                margin-right 19px
+            .item__info
+                justify-content space-between
+                .info__title
+                    margin-bottom 7px
+                .info__rating
+                    margin-bottom 15px
+                    .rating__stars
+                        display flex
+                        .star
+                            position relative
+                            width 18px
+                            height 18px    
+                            margin-right 4px
+                            &:after
+                                position absolute
+                                content ''
+                                display block
+                                top 50%
+                                transform translateY(-50%)
+                                opacity 1
+                                transition .3s
+                                icon_size_mask(18px, 18px, '../img/icons/star.svg')
+                                background-color #d9dee4
+                            &.rated 
+                                &:after
+                                    position absolute
+                                    content ''
+                                    display block
+                                    top 50%
+                                    transform translateY(-50%)
+                                    opacity 1
+                                    transition .3s
+                                    icon_size_mask(18px, 18px, '../img/icons/star.svg')
+                                    background-color #FFC82C
+                .info__desc
+                    margin-bottom 5px
+                .info__price
+                    margin-bottom 19px
+                button
+                    width 280px
+    .showcase__btn
+        width 203px
+        height 50px
+        align-self center
+        padding-bottom 7px
+        font-family LucidaGrande-Bold

@@ -72,3 +72,21 @@ $('.terms__item').on('click', function(e){
     e.preventDefault()
     $(this).find('.block').toggleClass('active')
 });
+
+// LIST VIEW SWITCHER
+$('.view-switch__item_linear').on('click', function(){
+    console.log('тык')
+    if ($(this).not('active')) {
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.showcase__list').addClass('showcase__list_linear').removeClass('showcase__list_grid');
+    }
+});
+$('.view-switch__item_grid').on('click', function(){
+    console.log('тык')
+    if ($(this).not('active')) {
+        $(this).addClass('active').siblings().removeClass('active');
+        $('.showcase__list').addClass('showcase__list_grid').removeClass('showcase__list_linear');
+    }
+});
+
+

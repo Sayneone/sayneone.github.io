@@ -1,19 +1,31 @@
 .showcase
-    h5.showcase__title
+    h5.showcase__title title
     .showcase__sorting-menu
         .sorting-menu__criteria
             .criteria__item
                 span.criteria__title sort by:
-                span.select__header position
+                .select__header position
                     ul.select__list
-                        li.select__item price
-                        li.select__item data
+                        li.select__item 
+                            a price
+                        li.select__item 
+                            a data
             .criteria__item
                 span.criteria__title display
                 span.select__header 6 per page
                     ul.select__list
-                        li.select__item 9 per page
-                        li.select__item 3 per page
-        .sorting-menu__switch
-    ul.showcase__list
-        
+                        li.select__item a 
+                            a 9 per page
+                        li.select__item     
+                            a 3 per page
+        .sorting-menu__view-switch
+            .view-switch__item.view-switch__item_linear.active
+            .view-switch__item.view-switch__item_grid
+    ul.showcase__list.showcase__list_linear
+        +showcase__item('img/listing/1.jpg', 'Caribien island', 3, 'пояснение к чему-то','$511.00')
+        +showcase__item('img/listing/2.jpg', 'Caribien island', 3, 'пояснение к чему-то','$511.00')
+        +showcase__item('img/listing/3.jpg', 'Caribien island', 3, 'пояснение к чему-то','$511.00')
+        +showcase__item('img/listing/4.jpg', 'Caribien island', 3, 'пояснение к чему-то','$511.00')
+        +showcase__item('img/listing/5.jpg', 'Caribien island', 3, 'пояснение к чему-то','$511.00')
+        +showcase__item('img/listing/6.jpg', 'Caribien island', 3, 'пояснение к чему-то','$511.00')
+    button.showcase__btn.btn.btn--b Load more

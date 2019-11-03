@@ -26,3 +26,22 @@ mixin list-sec__nav(title)
         for i in listSecCategories
             li.list__item
                 a(href='#')= i.name
+
+mixin showcase__item(url, title, starsQuantity, desk, price)
+    li.list__item
+        .item__img
+            img(src= url)
+        .item__info
+            a.info__title(href='#')= title
+            .info__rating
+                ul.rating__stars
+                    each index in [1,2,3,4,5]
+                        if index < starsQuantity + 1
+                            li.star.rated
+                        else 
+                            li.star
+            span.info__desc= desk
+            span.info__price= price
+            button.btn.btn--a Add to cart
+            
+                    
