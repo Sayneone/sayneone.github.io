@@ -34,6 +34,7 @@
                     margin-right 13px
                 .select__header
                     text-transform uppercase
+                    cursor pointer
                     display inline-block
                     position relative
                     color $color_darkGray
@@ -48,6 +49,42 @@
                         border-top 5px solid $color_darkGray
                     .select__list
                         display none
+                        position absolute
+                        background-color white
+                        z-index 10
+                        top 34px
+                        height max-content
+                        box-shadow 0 2px 4px 0 rgba(59,72,88,0.4)
+                        border-radius 6px
+                        width max-content
+                        padding 17px 15px 15px
+                        &:before
+                            display block
+                            z-index -1
+                            content ''
+                            position absolute
+                            left 50%
+                            transform translate(-50%, -41px)rotate(180deg)
+                            border 14px solid transparent
+                            border-top 10px solid white
+                        &:after
+                            display block
+                            z-index -2
+                            content ''
+                            position absolute
+                            left 50%
+                            transform translate(-50%, -104px)rotate(180deg)
+                            border 15px solid transparent
+                            border-top 11px solid rgba(0, 0, 0, 0.03)
+                        .select__item > a 
+                            cursor pointer
+                            color $color_lilGray	
+                            font-family SourceSansPro-SemiBold
+                            font-size 16px	
+                            font-weight 600	
+                            line-height 30px
+                            &:hover 
+                                color $color_lessGray
         .sorting-menu__view-switch
             display flex
             .view-switch__item

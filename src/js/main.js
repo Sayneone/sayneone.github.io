@@ -90,3 +90,24 @@ $('.view-switch__item_grid').on('click', function(){
 });
 
 
+// LIST CRITERIA SELECTS 
+
+$('.criteria__item_display').on('click', function(){
+    console.log('тык')
+    $(this).find('.select__list').toggle();
+    $(this).find('.select__item').on('click', function(){
+        var text =  $(this).text()
+        $(this).find('.select__list').hide();
+        $(this).closest('.select__header').text(text);
+    })
+});
+$('.criteria__item_sort').on('click', function(){
+    console.log('тык')
+    $(this).find('.select__list').toggle();
+    $(this).find('.select__item').on('click', function(){
+        var text =  $(this).text();
+        $(this).find('.select__list').hide();
+        $(this).closest('.select__header').text(text);
+    })
+});
+

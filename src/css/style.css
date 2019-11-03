@@ -2318,6 +2318,7 @@ template {
 }
 .showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .select__header {
   text-transform: uppercase;
+  cursor: pointer;
   display: inline-block;
   position: relative;
   color: #3b4858;
@@ -2334,6 +2335,56 @@ template {
 }
 .showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .select__header .select__list {
   display: none;
+  position: absolute;
+  background-color: #fff;
+  z-index: 10;
+  top: 34px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(59,72,88,0.4);
+          box-shadow: 0 2px 4px 0 rgba(59,72,88,0.4);
+  -webkit-border-radius: 6px;
+          border-radius: 6px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 17px 15px 15px;
+}
+.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .select__header .select__list:before {
+  display: block;
+  z-index: -1;
+  content: '';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -41px) rotate(180deg);
+      -ms-transform: translate(-50%, -41px) rotate(180deg);
+          transform: translate(-50%, -41px) rotate(180deg);
+  border: 14px solid transparent;
+  border-top: 10px solid #fff;
+}
+.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .select__header .select__list:after {
+  display: block;
+  z-index: -2;
+  content: '';
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, -104px) rotate(180deg);
+      -ms-transform: translate(-50%, -104px) rotate(180deg);
+          transform: translate(-50%, -104px) rotate(180deg);
+  border: 15px solid transparent;
+  border-top: 11px solid rgba(0,0,0,0.03);
+}
+.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .select__header .select__list .select__item > a {
+  cursor: pointer;
+  color: #8392a6;
+  font-family: SourceSansPro-SemiBold;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .select__header .select__list .select__item > a:hover {
+  color: rgba(59,72,88,0.9);
 }
 .showcase .showcase__sorting-menu .sorting-menu__view-switch {
   display: -webkit-box;
