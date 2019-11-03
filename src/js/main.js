@@ -105,9 +105,9 @@ $('.criteria__item_sort').on('click', function(){
     console.log('тык')
     $(this).find('.select__list').toggle();
     $(this).find('.select__item').on('click', function(){
-        var text =  $(this).text();
-        $(this).find('.select__list').hide();
+        var text = $(this).text();
         $(this).closest('.select__header').text(text);
-    })
+        $(this).find('.select__list').hide();
+    });
 });
 

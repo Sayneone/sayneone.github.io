@@ -2307,6 +2307,10 @@ template {
   display: flex;
 }
 .showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 88px;
 }
 .showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .criteria__title {
@@ -2316,7 +2320,10 @@ template {
   line-height: 23px;
   margin-right: 13px;
 }
-.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .select__header {
+.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .criteria__select {
+  position: relative;
+}
+.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .criteria__select .select__header {
   text-transform: uppercase;
   cursor: pointer;
   display: inline-block;
@@ -2325,7 +2332,7 @@ template {
   font-size: 18px;
   line-height: 23px;
 }
-.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .select__header:after {
+.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .criteria__select .select__header:after {
   content: '';
   position: absolute;
   right: -15px;
@@ -2333,7 +2340,7 @@ template {
   border: 5px solid transparent;
   border-top: 5px solid #3b4858;
 }
-.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .select__header .select__list {
+.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .criteria__select .select__list {
   display: none;
   position: absolute;
   background-color: #fff;
@@ -2351,7 +2358,7 @@ template {
   width: max-content;
   padding: 17px 15px 15px;
 }
-.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .select__header .select__list:before {
+.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .criteria__select .select__list:before {
   display: block;
   z-index: -1;
   content: '';
@@ -2363,7 +2370,7 @@ template {
   border: 14px solid transparent;
   border-top: 10px solid #fff;
 }
-.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .select__header .select__list:after {
+.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .criteria__select .select__list:after {
   display: block;
   z-index: -2;
   content: '';
@@ -2375,7 +2382,7 @@ template {
   border: 15px solid transparent;
   border-top: 11px solid rgba(0,0,0,0.03);
 }
-.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .select__header .select__list .select__item > a {
+.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .criteria__select .select__list .select__item > a {
   cursor: pointer;
   color: #8392a6;
   font-family: SourceSansPro-SemiBold;
@@ -2383,7 +2390,7 @@ template {
   font-weight: 600;
   line-height: 30px;
 }
-.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .select__header .select__list .select__item > a:hover {
+.showcase .showcase__sorting-menu .sorting-menu__criteria .criteria__item .criteria__select .select__list .select__item > a:hover {
   color: rgba(59,72,88,0.9);
 }
 .showcase .showcase__sorting-menu .sorting-menu__view-switch {

@@ -25,6 +25,7 @@
         .sorting-menu__criteria
             display flex
             .criteria__item
+                display flex
                 margin-right 88px
                 .criteria__title
                     text-transform uppercase
@@ -32,21 +33,23 @@
                     font-size 18px 
                     line-height 23px
                     margin-right 13px
-                .select__header
-                    text-transform uppercase
-                    cursor pointer
-                    display inline-block
+                .criteria__select
                     position relative
-                    color $color_darkGray
-                    font-size 18px	
-                    line-height 23px
-                    &:after
-                        content ''
-                        position absolute
-                        right -15px
-                        top 40%
-                        border 5px solid transparent
-                        border-top 5px solid $color_darkGray
+                    .select__header
+                        text-transform uppercase
+                        cursor pointer
+                        display inline-block
+                        position relative
+                        color $color_darkGray
+                        font-size 18px	
+                        line-height 23px
+                        &:after
+                            content ''
+                            position absolute
+                            right -15px
+                            top 40%
+                            border 5px solid transparent
+                            border-top 5px solid $color_darkGray
                     .select__list
                         display none
                         position absolute
