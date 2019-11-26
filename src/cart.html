@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/libs/slick-theme.css" rel="stylesheet" type="text/css">
     <link href="css/libs/ion.rangeSlider.min.css" rel="stylesheet" type="text/css">
-    <title>Template list</title>
+    <title>Shoping cart</title>
   </head>
   <body>
     <div class="overlay"></div>
@@ -29,7 +29,7 @@
         <button class="btn btn--a modal__form-btn" type="submit">Save</button>
       </form>
     </div>
-    <main class="list-page">
+    <main class="cart-page">
       <div class="wrapper">
         <header class="header">
           <div class="container header__container">
@@ -68,136 +68,69 @@
             </div>
           </div>
         </header>
-        <div class="list-sec">
-          <div class="container">
-                <aside class="list-sec__nav">
-                  <h5 class="nav__title">categories</h5>
-                  <ul class="nav__list"></ul>
-                  <li class="list__item"><a href="#">category 1</a></li>
-                  <li class="list__item"><a href="#">category 2</a></li>
-                  <li class="list__item"><a href="#">category 3</a></li>
-                  <li class="list__item"><a href="#">category 4</a></li>
-                  <li class="list__item"><a href="#">category 5</a></li>
-                </aside>
-            <div class="showcase">
-              <h5 class="showcase__title">title</h5>
-              <div class="showcase__sorting-menu">
-                <div class="criteria">
-                  <div class="criteria__item"><span class="criteria__title">sort by:</span>
-                    <div class="criteria__select" id="criteriaSort"><span class="criteria__header">position</span>
-                      <ul class="criteria__list">
-                        <li class="item"> <a>price</a></li>
-                        <li class="item"> <a>data</a></li>
-                      </ul>
+        <div class="container">
+          <div class="cart-content">
+            <div class="cart-content__header">
+              <h1 class="cart-content__title">shoping cart</h1>
+            </div>
+            <div class="cart-interface">
+              <table class="cart-interface__table">
+                <tbody>
+                  <tr class="head">
+                    <th class="remove-col">Remove</th>
+                    <th class="image-col">Image</th>
+                    <th class="product-col">Product(s)</th>
+                    <th class="price-col">Price</th>
+                    <th class="qty-col">Qty.</th>
+                    <th class="total-col">Total</th>
+                  </tr>
+                  <tr class="row">
+                    <td class="remove-cell"> 
+                      <label class="label__checkbox">
+                        <div class="checkbox-btn">
+                          <input class="checkbox" type="checkbox" checked>
+                          <div class="knob"></div>
+                        </div>
+                      </label>
+                    </td>
+                    <td class="image-cell"><img src="img/slider/1.jpg"></td>
+                    <td class="product-cell">Google Analytics</td>
+                    <td class="price-cell">$25.00</td>
+                    <td class="qty-cell"> 
+                      <div class="qty-cell__wrap">1</div>
+                    </td>
+                    <td class="total-cell">$25.00</td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="cart-interface__btns">
+                <button class="btn btn--a">Update cart</button>
+                <button class="btn btn--b">Continue shopping</button>
+              </div>
+              <div class="cart-interface__total">
+                <div class="total__sub-row"><span>Sub-Total:</span><span class="amount">$25.00</span></div>
+                <div class="total__shipping-row"><span>Shipping:</span><span class="amount">$25.00</span></div>
+                <div class="total__tax-row"><span>Tax:</span><span class="amount">$25.00</span></div>
+                <div class="total__result-row"><span>Total:</span><span class="amount">$25.00</span></div>
+                <div class="total__agreement">
+                  <label class="label__checkbox">
+                    <div class="checkbox-btn">
+                      <input class="checkbox" type="checkbox">
+                      <div class="knob"></div>
                     </div>
-                  </div>
-                  <div class="criteria__item"><span class="criteria__title">display</span>
-                    <div class="criteria__select" id="criteriaDisplay"><span class="criteria__header">6 per page</span>
-                      <ul class="criteria__list">
-                        <li class="item"> <a>9 per page</a></li>
-                        <li class="item">    <a>3 per page</a></li>
-                      </ul>
-                    </div>
-                  </div>
+                  </label><span>I Agree. <a href="#" class="link--b"> Our Terms of Service </a> and Privacy Notice are linked here for your review.</span>
                 </div>
-                <div class="view-switch">
-                  <div class="view-switch__item view-switch__item--linear active"></div>
-                  <div class="view-switch__item view-switch__item--grid"></div>
+                <div class="total__checkout-btn">
+                  <div class="btn btn--a">checkout</div>
                 </div>
               </div>
-              <ul class="showcase__list linear">
-                    <li class="item">
-                      <div class="item__img"><img src="img/listing/1.jpg"></div>
-                      <div class="item__info"><a class="title" href="#">Caribien island</a>
-                        <div class="rating">
-                          <ul class="rating__stars">
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                          </ul>
-                        </div><span class="desc">пояснение к чему-то</span><span class="price">$511.00</span>
-                        <button class="btn btn--a">Add to cart</button>
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="item__img"><img src="img/listing/2.jpg"></div>
-                      <div class="item__info"><a class="title" href="#">Caribien island</a>
-                        <div class="rating">
-                          <ul class="rating__stars">
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                          </ul>
-                        </div><span class="desc">пояснение к чему-то</span><span class="price">$511.00</span>
-                        <button class="btn btn--a">Add to cart</button>
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="item__img"><img src="img/listing/3.jpg"></div>
-                      <div class="item__info"><a class="title" href="#">Caribien island</a>
-                        <div class="rating">
-                          <ul class="rating__stars">
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                          </ul>
-                        </div><span class="desc">пояснение к чему-то</span><span class="price">$511.00</span>
-                        <button class="btn btn--a">Add to cart</button>
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="item__img"><img src="img/listing/4.jpg"></div>
-                      <div class="item__info"><a class="title" href="#">Caribien island</a>
-                        <div class="rating">
-                          <ul class="rating__stars">
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                          </ul>
-                        </div><span class="desc">пояснение к чему-то</span><span class="price">$511.00</span>
-                        <button class="btn btn--a">Add to cart</button>
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="item__img"><img src="img/listing/5.jpg"></div>
-                      <div class="item__info"><a class="title" href="#">Caribien island</a>
-                        <div class="rating">
-                          <ul class="rating__stars">
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                          </ul>
-                        </div><span class="desc">пояснение к чему-то</span><span class="price">$511.00</span>
-                        <button class="btn btn--a">Add to cart</button>
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="item__img"><img src="img/listing/6.jpg"></div>
-                      <div class="item__info"><a class="title" href="#">Caribien island</a>
-                        <div class="rating">
-                          <ul class="rating__stars">
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                          </ul>
-                        </div><span class="desc">пояснение к чему-то</span><span class="price">$511.00</span>
-                        <button class="btn btn--a">Add to cart</button>
-                      </div>
-                    </li>
-              </ul>
-              <button class="showcase__btn btn btn--b">Load more</button>
+            </div>
+            <div class="cart-content__empty-cart">
+              <h2 class="title">Oops! Your cart is empty because you didn’t buy anything</h2>
+            </div>
+            <div class="cart-content__bought-cart">
+              <h2 class="title">Thank you for your choice. Your number of the order is 5238043</h2>
+              <button class="btn btn--a">Go Home</button>
             </div>
           </div>
         </div>
@@ -263,10 +196,10 @@
         </footer>
       </div>
     </main>
-    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
-    <script type="text/javascript" src="js/libs/slick.min.js"></script>
-    <script type="text/javascript" src="js/libs/ion.rangeSlider.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/sliders.js"></script>
   </body>
+  <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+  <script type="text/javascript" src="js/libs/slick.min.js"></script>
+  <script type="text/javascript" src="js/libs/ion.rangeSlider.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/sliders.js"></script>
 </html>

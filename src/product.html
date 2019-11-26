@@ -8,7 +8,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/libs/slick-theme.css" rel="stylesheet" type="text/css">
     <link href="css/libs/ion.rangeSlider.min.css" rel="stylesheet" type="text/css">
-    <title>Template list</title>
+    <title>Template product-page</title>
   </head>
   <body>
     <div class="overlay"></div>
@@ -29,7 +29,7 @@
         <button class="btn btn--a modal__form-btn" type="submit">Save</button>
       </form>
     </div>
-    <main class="list-page">
+    <main class="product-page">
       <div class="wrapper">
         <header class="header">
           <div class="container header__container">
@@ -68,137 +68,30 @@
             </div>
           </div>
         </header>
-        <div class="list-sec">
-          <div class="container">
-                <aside class="list-sec__nav">
-                  <h5 class="nav__title">categories</h5>
-                  <ul class="nav__list"></ul>
-                  <li class="list__item"><a href="#">category 1</a></li>
-                  <li class="list__item"><a href="#">category 2</a></li>
-                  <li class="list__item"><a href="#">category 3</a></li>
-                  <li class="list__item"><a href="#">category 4</a></li>
-                  <li class="list__item"><a href="#">category 5</a></li>
-                </aside>
-            <div class="showcase">
-              <h5 class="showcase__title">title</h5>
-              <div class="showcase__sorting-menu">
-                <div class="criteria">
-                  <div class="criteria__item"><span class="criteria__title">sort by:</span>
-                    <div class="criteria__select" id="criteriaSort"><span class="criteria__header">position</span>
-                      <ul class="criteria__list">
-                        <li class="item"> <a>price</a></li>
-                        <li class="item"> <a>data</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="criteria__item"><span class="criteria__title">display</span>
-                    <div class="criteria__select" id="criteriaDisplay"><span class="criteria__header">6 per page</span>
-                      <ul class="criteria__list">
-                        <li class="item"> <a>9 per page</a></li>
-                        <li class="item">    <a>3 per page</a></li>
-                      </ul>
+        <div class="container">
+          <div class="product-content">
+            <div class="product-content__info">
+              <div class="product-content__img"><img src="img/listing/1.jpg"></div>
+              <div class="product-content__desc">
+                <div class="product-content__header">
+                  <h3 class="product-content__title">Customer Demo</h3>
+                  <div class="product-content__rating">
+                    <div class="rating__stars">
+                      <div class="star rated"></div>
+                      <div class="star rated"></div>
+                      <div class="star rated"></div>
+                      <div class="star"></div>
+                      <div class="star"></div>
                     </div>
                   </div>
                 </div>
-                <div class="view-switch">
-                  <div class="view-switch__item view-switch__item--linear active"></div>
-                  <div class="view-switch__item view-switch__item--grid"></div>
+                <p class="product-content__excerpt">By creating an account on our website, you will be able to shop faster, be up to date on an orders status, and keep track of the orders you have previously made.</p>
+                <div class="product-content__footer"><span class="price">$420.00</span>
+                  <button class="btn btn--a">Add to Cart</button>
                 </div>
               </div>
-              <ul class="showcase__list linear">
-                    <li class="item">
-                      <div class="item__img"><img src="img/listing/1.jpg"></div>
-                      <div class="item__info"><a class="title" href="#">Caribien island</a>
-                        <div class="rating">
-                          <ul class="rating__stars">
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                          </ul>
-                        </div><span class="desc">пояснение к чему-то</span><span class="price">$511.00</span>
-                        <button class="btn btn--a">Add to cart</button>
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="item__img"><img src="img/listing/2.jpg"></div>
-                      <div class="item__info"><a class="title" href="#">Caribien island</a>
-                        <div class="rating">
-                          <ul class="rating__stars">
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                          </ul>
-                        </div><span class="desc">пояснение к чему-то</span><span class="price">$511.00</span>
-                        <button class="btn btn--a">Add to cart</button>
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="item__img"><img src="img/listing/3.jpg"></div>
-                      <div class="item__info"><a class="title" href="#">Caribien island</a>
-                        <div class="rating">
-                          <ul class="rating__stars">
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                          </ul>
-                        </div><span class="desc">пояснение к чему-то</span><span class="price">$511.00</span>
-                        <button class="btn btn--a">Add to cart</button>
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="item__img"><img src="img/listing/4.jpg"></div>
-                      <div class="item__info"><a class="title" href="#">Caribien island</a>
-                        <div class="rating">
-                          <ul class="rating__stars">
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                          </ul>
-                        </div><span class="desc">пояснение к чему-то</span><span class="price">$511.00</span>
-                        <button class="btn btn--a">Add to cart</button>
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="item__img"><img src="img/listing/5.jpg"></div>
-                      <div class="item__info"><a class="title" href="#">Caribien island</a>
-                        <div class="rating">
-                          <ul class="rating__stars">
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                          </ul>
-                        </div><span class="desc">пояснение к чему-то</span><span class="price">$511.00</span>
-                        <button class="btn btn--a">Add to cart</button>
-                      </div>
-                    </li>
-                    <li class="item">
-                      <div class="item__img"><img src="img/listing/6.jpg"></div>
-                      <div class="item__info"><a class="title" href="#">Caribien island</a>
-                        <div class="rating">
-                          <ul class="rating__stars">
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star rated"></li>
-                            <li class="star"></li>
-                            <li class="star"></li>
-                          </ul>
-                        </div><span class="desc">пояснение к чему-то</span><span class="price">$511.00</span>
-                        <button class="btn btn--a">Add to cart</button>
-                      </div>
-                    </li>
-              </ul>
-              <button class="showcase__btn btn btn--b">Load more</button>
             </div>
+            <p class="product-content__text">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment. Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
           </div>
         </div>
         <footer class="footer">
@@ -263,10 +156,10 @@
         </footer>
       </div>
     </main>
-    <script type="text/javascript" src="js/libs/jquery.min.js"></script>
-    <script type="text/javascript" src="js/libs/slick.min.js"></script>
-    <script type="text/javascript" src="js/libs/ion.rangeSlider.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/sliders.js"></script>
   </body>
+  <script type="text/javascript" src="js/libs/jquery.min.js"></script>
+  <script type="text/javascript" src="js/libs/slick.min.js"></script>
+  <script type="text/javascript" src="js/libs/ion.rangeSlider.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/sliders.js"></script>
 </html>

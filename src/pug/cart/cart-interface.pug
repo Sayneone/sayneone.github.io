@@ -1,0 +1,47 @@
+.cart-interface
+    table.cart-interface__table
+        tbody
+            tr.head
+                th.remove-col Remove
+                th.image-col Image
+                th.product-col Product(s)
+                th.price-col Price
+                th.qty-col Qty.
+                th.total-col Total
+            tr.row
+                td.remove-cell  
+                    label.label__checkbox
+                        .checkbox-btn
+                            input.checkbox(type='checkbox' checked)
+                            .knob
+                td.image-cell
+                    img(src="img/slider/1.jpg")
+                td.product-cell Google Analytics
+                td.price-cell $25.00
+                td.qty-cell 
+                    .qty-cell__wrap 1
+                td.total-cell $25.00
+    .cart-interface__btns
+        button.btn.btn--a Update cart
+        button.btn.btn--b Continue shopping
+    .cart-interface__total
+        .total__sub-row
+            span Sub-Total:
+            span.amount $25.00
+        .total__shipping-row
+            span Shipping:
+            span.amount $25.00
+        .total__tax-row
+            span Tax:
+            span.amount $25.00
+        .total__result-row
+            span Total:
+            span.amount $25.00
+        .total__agreement
+            label.label__checkbox
+                .checkbox-btn
+                    input.checkbox(type='checkbox')
+                    .knob
+            span I Agree. <a href="#" class="link--b"> Our Terms of Service </a> and Privacy Notice are linked here for your review.
+        .total__checkout-btn
+            .btn.btn--a checkout

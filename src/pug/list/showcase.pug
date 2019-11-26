@@ -1,29 +1,29 @@
 .showcase
     h5.showcase__title title
     .showcase__sorting-menu
-        .sorting-menu__criteria
-            .criteria__item.criteria__item_sort 
+        .criteria
+            .criteria__item
                 span.criteria__title sort by:
-                .criteria__select 
-                    span.select__header position
-                    ul.select__list
-                        li.select__item 
+                .criteria__select#criteriaSort
+                    span.criteria__header position
+                    ul.criteria__list
+                        li.item 
                             a price
-                        li.select__item 
+                        li.item 
                             a data
-            .criteria__item.criteria__item_display
+            .criteria__item
                 span.criteria__title display
-                .criteria__select 
-                    span.select__header 6 per page
-                    ul.select__list
-                        li.select__item  
+                .criteria__select#criteriaDisplay
+                    span.criteria__header 6 per page
+                    ul.criteria__list
+                        li.item  
                             a 9 per page
-                        li.select__item     
+                        li.item     
                             a 3 per page
-        .sorting-menu__view-switch
-            .view-switch__item.view-switch__item_linear.active
-            .view-switch__item.view-switch__item_grid
-    ul.showcase__list.showcase__list_linear
+        .view-switch
+            .view-switch__item.view-switch__item--linear.active
+            .view-switch__item.view-switch__item--grid
+    ul.showcase__list.linear
         +showcase__item('img/listing/1.jpg', 'Caribien island', 3, 'пояснение к чему-то','$511.00')
         +showcase__item('img/listing/2.jpg', 'Caribien island', 3, 'пояснение к чему-то','$511.00')
         +showcase__item('img/listing/3.jpg', 'Caribien island', 3, 'пояснение к чему-то','$511.00')

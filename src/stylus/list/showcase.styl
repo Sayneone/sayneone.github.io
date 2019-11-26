@@ -22,154 +22,156 @@
         align-items center
         justify-content space-between
         margin-bottom 23px
-        .sorting-menu__criteria
+        .criteria
             display flex
-            .criteria__item
+            &__item
                 display flex
                 margin-right 88px
-                .criteria__title
-                    text-transform uppercase
-                    color $color__moreGray
-                    font-size 18px 
-                    line-height 23px
-                    margin-right 13px
-                .criteria__select
-                    position relative
-                    .select__header
-                        text-transform uppercase
+            &__title
+                text-transform uppercase
+                color $color__moreGray
+                font-size 18px 
+                line-height 23px
+                margin-right 13px
+            &__select
+                position relative
+            &__header
+                text-transform uppercase
+                cursor pointer
+                display inline-block
+                position relative
+                color $color_darkGray
+                font-size 18px	
+                line-height 23px
+                &:after
+                    content ''
+                    position absolute
+                    right -15px
+                    top 40%
+                    border 5px solid transparent
+                    border-top 5px solid $color_darkGray
+            &__list
+                display none
+                position absolute
+                background-color white
+                z-index 10
+                top 34px
+                height max-content
+                box-shadow 0 2px 4px 0 rgba(59,72,88,0.4)
+                border-radius 6px
+                width max-content
+                padding 17px 15px 15px
+                &:before
+                    display block
+                    z-index -1
+                    content ''
+                    position absolute
+                    left 50%
+                    transform translate(-50%, -41px)rotate(180deg)
+                    border 14px solid transparent
+                    border-top 10px solid white
+                &:after
+                    display block
+                    z-index -2
+                    content ''
+                    position absolute
+                    left 50%
+                    transform translate(-50%, -104px)rotate(180deg)
+                    border 15px solid transparent
+                    border-top 11px solid rgba(0, 0, 0, 0.03)
+                    .item > a 
                         cursor pointer
-                        display inline-block
-                        position relative
-                        color $color_darkGray
-                        font-size 18px	
-                        line-height 23px
-                        &:after
-                            content ''
-                            position absolute
-                            right -15px
-                            top 40%
-                            border 5px solid transparent
-                            border-top 5px solid $color_darkGray
-                    .select__list
-                        display none
-                        position absolute
-                        background-color white
-                        z-index 10
-                        top 34px
-                        height max-content
-                        box-shadow 0 2px 4px 0 rgba(59,72,88,0.4)
-                        border-radius 6px
-                        width max-content
-                        padding 17px 15px 15px
-                        &:before
-                            display block
-                            z-index -1
-                            content ''
-                            position absolute
-                            left 50%
-                            transform translate(-50%, -41px)rotate(180deg)
-                            border 14px solid transparent
-                            border-top 10px solid white
-                        &:after
-                            display block
-                            z-index -2
-                            content ''
-                            position absolute
-                            left 50%
-                            transform translate(-50%, -104px)rotate(180deg)
-                            border 15px solid transparent
-                            border-top 11px solid rgba(0, 0, 0, 0.03)
-                        .select__item > a 
-                            cursor pointer
-                            color $color_lilGray	
-                            font-family SourceSansPro-SemiBold
-                            font-size 16px	
-                            font-weight 600	
-                            line-height 30px
-                            &:hover 
-                                color $color_lessGray
-        .sorting-menu__view-switch
+                        color $color_lilGray	
+                        font-family SourceSansPro-SemiBold
+                        font-size 16px	
+                        font-weight 600	
+                        line-height 30px
+                        &:hover 
+                            color $color_lessGray
+        .view-switch
             display flex
             .view-switch__item
                 background-color $color_lilGray
                 display flex
+                transition background-color .2s ease-out
                 &:hover 
                     background-color $color_lessGray
                 &.active
                     background-color $color_bigRiff
                     &:hover 
                         background-color $color_smallRiff
-            .view-switch__item_linear
+            .view-switch__item--linear
                 icon_size_mask(28px, 28px, '../img/icons/view-switch_linear.svg')
                 margin-right 16px
-            .view-switch__item.view-switch__item_grid
+            .view-switch__item--grid
                 icon_size_mask(28px, 28px, '../img/icons/view-switch_grid.svg')
     .showcase__list
         display flex
         justify-content space-between
-        .list__item 
-            .item__img
+        .item 
+            &__img
                 img 
                     display block
                     object-fit cover
                     height 189px
                     width 281px
                     border-radius 6px
-            .item__info
+            &__info
                 display flex
                 flex-direction column
-                .info__title
+                .title
                     cursor pointer
                     color #3B4858	
                     font-family SourceSansPro-SemiBold	
                     font-size 22px	
                     font-weight 600	
                     line-height 28px
-                .info__desc
+                .desc
                     color $color_lessGray	
                     font-size 18px	
                     line-height 24px
-                .info__price
+                .price
                     color #FF4949
                     font-family SourceSansPro-SemiBold	
                     font-size 18px	
                     font-weight 600	
                     line-height 23px
-    .showcase__list_grid
+    .grid
         flex-wrap wrap
         margin-bottom 40px
-        .list__item 
+        .item 
             width 281px
             margin-bottom 40px
-            .item__img
+            &__img
                 margin-bottom 10px
-            .item__info
-                .info__title
+            &__info
+                .title
                     margin-bottom 5px
-                .info__rating
+                .rating
                     display none
-                .info__desc
+                .desc
                     display none
-                .info__price
+                .price
                     margin-bottom 18px
-    .showcase__list_linear
+    .linear
         flex-wrap wrap
         margin-bottom 40px
-        .list__item 
+        .item 
             width 100%
             display flex
             margin-bottom 40px
-            .item__img
+            &__img
                 margin-right 19px
-            .item__info
+            &__info
                 justify-content space-between
-                .info__title
+                .title
                     margin-bottom 7px
-                .info__rating
+                .rating
                     margin-bottom 15px
                     .rating__stars
                         display flex
                         .star
+                            cursor none !important
                             position relative
                             width 18px
                             height 18px    
@@ -195,9 +197,9 @@
                                     transition .3s
                                     icon_size_mask(18px, 18px, '../img/icons/star.svg')
                                     background-color #FFC82C
-                .info__desc
+                .desc
                     margin-bottom 5px
-                .info__price
+                .price
                     margin-bottom 19px
                 button
                     width 280px

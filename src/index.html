@@ -11,6 +11,24 @@
     <title>Template index</title>
   </head>
   <body>
+    <div class="overlay"></div>
+    <div class="modal" id="modal">
+      <div class="modal__header">
+        <h2 class="modal__title">Title of pop up</h2>
+        <div class="modal__exit">
+          <div class="modal__exit-icon"></div>
+        </div>
+      </div>
+      <form class="modal__form" action="form.php">
+        <label class="modal__form-label" for="name"><span class="modal__form-label-name">Name</span>
+          <input class="modal__form-label-input" type="text" required>
+        </label>
+        <label class="modal__form-label" for="tel"><span class="modal__form-label-name">Comment</span>
+          <input class="modal__form-label-input" type="text" required>
+        </label>
+        <button class="btn btn--a modal__form-btn" type="submit">Save</button>
+      </form>
+    </div>
     <main class="index-page">
       <div class="wrapper">
         <header class="header">
@@ -39,14 +57,14 @@
                   <li class="menu__item active"><a class="link" href="#">Menu 1</a></li>
                   <li class="menu__item dropdown"><a class="link" href="#">Menu 2</a>
                     <ul class="dropdown__list">
-                      <li class="dropdown__item"><a class="link" href="#">submenu1</a></li>
-                      <li class="dropdown__item"><a class="link" href="#">submenu2</a></li>
-                      <li class="dropdown__item"><a class="link" href="#">submenu3</a></li>
+                      <li class="dropdown__item"><a class="link" href="index.html">index page</a></li>
+                      <li class="dropdown__item"><a class="link" href="product.html">product page</a></li>
+                      <li class="dropdown__item"><a class="link" href="list.html">list page</a></li>
                     </ul>
                   </li>
                   <li class="menu__item"> <a class="link" href="#">Menu 3</a></li>
                 </ul>
-              </nav><a class="cart icon-mask" href="#"></a>
+              </nav><a class="cart" href="cart.html"></a>
             </div>
           </div>
         </header>
@@ -466,16 +484,16 @@
                   <div class="btn off">Off</div>
                 </div>
               </label>
-              <div class="select-list"> 
-                <div class="select-list__header">Select what you want</div>
-                <div class="select-list__list">
-                  <div class="select-list__list-item">maby that</div>
-                  <div class="select-list__list-item">weed</div>
-                  <div class="select-list__list-item">a ceed</div>
-                  <div class="select-list__list-item">cock</div>
-                  <div class="select-list__list-item">aid</div>
-                  <div class="select-list__list-item">maniac</div>
-                  <div class="select-list__list-item">lock </div>
+              <div class="select">
+                <div class="select__header">Select what you want</div>
+                <div class="select__list">
+                  <div class="select__list-item">maby that</div>
+                  <div class="select__list-item">weed</div>
+                  <div class="select__list-item">a ceed</div>
+                  <div class="select__list-item">cock</div>
+                  <div class="select__list-item">aid</div>
+                  <div class="select__list-item">maniac</div>
+                  <div class="select__list-item">lock </div>
                 </div>
               </div><span>Tooltip</span>
               <div class="tooltip">
@@ -574,7 +592,7 @@
               </ul>
             </div>
             <div class="contacts-support">
-              <h6 class="title">Contact Support</h6><a class="mail link--a" href="jermey.kling@yahoo.com">jermey.kling@yahoo.com</a>
+              <h6 class="title">Contact Support</h6><a class="mail" href="mailto:jermey.kling@yahoo.com">jermey.kling@yahoo.com</a>
               <button class="btn btn--b">Leave feeback</button>
             </div>
             <div class="socials">

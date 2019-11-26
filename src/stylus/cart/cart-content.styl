@@ -1,0 +1,162 @@
+.cart-page
+    .header
+        margin-bottom 25px
+    .cart-content
+        position relative
+        &__header
+            display flex
+            align-items center
+            background-color #F9FAFC
+            height 60px
+            padding 0 20px
+        &__title
+            font-family SourceSansPro-Bold
+            text-transform uppercase
+            font-size 22px	
+            font-weight bold	
+            line-height 28px
+        .cart-interface
+            display flex
+            flex-direction column
+            align-items flex-end
+            &__table
+                tr 
+                    padding 0
+                    margin 0
+                    th 
+                        padding 0
+                        margin 0
+                    td
+                        padding 0
+                        margin 0
+                        vertical-align middle
+                .head
+                    font-family SourceSansPro-SemiBold
+                    padding 0 20px
+                    height 55px
+                    .remove-col
+                        font-family inherit
+                        width 143px
+                        padding-left 20px
+                    .image-col
+                        font-family inherit
+                        width 140px
+                    .product-col
+                        font-family inherit
+                        width 401px
+                    .price-col
+                        font-family inherit
+                        width 140px
+                    .qty-col
+                        font-family inherit
+                        width 154px
+                        padding-left 20px
+                    .total-col
+                        font-family inherit
+                        width 162px
+                .row
+                    height 121px
+                    .remove-cell
+                        padding-left 33px
+                    .image-cell
+                        img 
+                            display block
+                            object-fit cover
+                            height 65px
+                            width 90px
+                            border-radius 6px
+                    .product-cell
+                        font-family SourceSansPro-SemiBold
+                    .price-cell
+                        font-family SourceSansPro-SemiBold
+                    .qty-cell
+                        .qty-cell__wrap
+                            font-family SourceSansPro-SemiBold
+                            font-size 18px
+                            line-height 30
+                            display flex
+                            justify-content center
+                            align-items center
+                            height 50px
+                            width 71px
+                            border 1px solid #E3E9EF
+                            border-radius 6px
+                    .total-cell
+                         font-family SourceSansPro-SemiBold
+            &__btns 
+                width 100%
+                height 84px
+                background-color $color_likeWhite
+                display flex
+                align-items center
+                justify-content flex-end
+                padding 0 10px
+                margin-bottom 61px
+                .btn--a
+                    margin-right 20px
+                    width 129px
+                .btn--b
+                    width 197px    
+            &__total
+                width 381px
+                background-color $color_likeWhite 
+                padding: 20px 25px 26px
+                margin-bottom 181px
+                .total
+                    &__sub-row,
+                    &__shipping-row,
+                    &__tax-row
+                        color $color_darkGray
+                        font-size 16px	
+                        line-height 20px
+                        display flex
+                        align-items center
+                        justify-content space-between
+                        margin-bottom 28px
+                        &:last-child
+                            margin-bottom 31px
+                    &__result-row
+                        font-family SourceSansPro-SemiBold
+                        font-size 28px	
+                        line-height 36px       
+                        border 1px solid #E1E8F0
+                        border-left 0
+                        border-right 0 
+                        padding 10px 0       
+                        display flex
+                        align-items center
+                        justify-content space-between
+                        margin-bottom 31px
+                    &__agreement
+                        color: rgba(59,72,88,0.9);
+                        display flex
+                        margin-bottom 34px
+                        .label__checkbox
+                            margin-right 8px
+        &__empty-cart
+            display none
+            width 100%
+            height calc(100vh - 375px)
+            .title
+                position: absolute
+                top 145px
+                font-family SourceSansPro-ExtraLight
+                transform translatex(-50%)
+                left 50%
+                width 82%
+        &__bought-cart
+            margin-top 65px
+            display flex
+            align-items center
+            flex-direction column
+            width 100%
+            height calc(100vh - 375px)
+            .title
+                font-family SourceSansPro-SemiBold
+                font-size 36px
+                line-height 45px
+                width 486px
+                margin-bottom 34px
+            .btn
+                height 60px
+                width 169px

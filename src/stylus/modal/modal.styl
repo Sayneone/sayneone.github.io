@@ -1,0 +1,75 @@
+.overlay 
+    width 100%
+    min-height 100vh
+    position fixed
+    top 0
+    left 0
+    background rgba(184,193,204,1)
+    opacity 1
+    max-height 100vh
+    z-index 1
+    display none
+    &.open
+        display flex
+.modal
+    background-color #FFFFFF
+    border-radius 6px
+    position absolute
+    left 50%
+    top 50%
+    transform translate(-50%)
+    z-index 2
+    width 580px
+    display none
+    flex-direction column
+    padding 30.5px 50.5px
+    box-shadow 0 3px 5px 0 rgba(31,45,61,0.15)
+    &__header
+        position relative
+        text-align center
+        height 56px
+        margin-bottom 20px
+    &__title 
+        font-family SourceSansPro-Bold
+        font-size 30px
+        line-height 38px
+        border-bottom 1px solid #E1E8F0
+        padding-bottom 15px
+    &__exit
+        position absolute
+        top -15px
+        right -40px
+        width 24px
+        height 24px
+        cursor pointer
+        &:hover &-icon:before,
+        &:hover &-icon
+            background-color rgba(59,72,88,0.9)
+        &-icon 
+            height 2px
+            width 19px
+            background-color #B8C1CC
+            transform rotate(45deg) translate(50%, 289%)
+            cursor pointer
+            &:before 
+                right 11px
+                content ''
+                height 2px
+                width 19px
+                background-color #B8C1CC
+                position absolute
+                transform rotate(90deg) translateY(-11px)
+    &__form
+        display flex
+        flex-direction column
+        margin-bottom 20px
+        &-label 
+            display flex
+            flex-direction column
+            margin-bottom 20px
+            padding 0 10px
+            &-name 
+                margin-bottom 10px
+        &-btn
+            margin-top 20px
+   

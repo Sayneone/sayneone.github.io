@@ -28,20 +28,20 @@ mixin list-sec__nav(title)
                 a(href='#')= i.name
 
 mixin showcase__item(url, title, starsQuantity, desk, price)
-    li.list__item
+    li.item
         .item__img
             img(src= url)
         .item__info
-            a.info__title(href='#')= title
-            .info__rating
+            a.title(href='#')= title
+            .rating
                 ul.rating__stars
                     each index in [1,2,3,4,5]
                         if index < starsQuantity + 1
                             li.star.rated
                         else 
                             li.star
-            span.info__desc= desk
-            span.info__price= price
+            span.desc= desk
+            span.price= price
             button.btn.btn--a Add to cart
             
                     

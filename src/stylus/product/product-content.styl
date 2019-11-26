@@ -1,0 +1,90 @@
+.product-page
+    .header
+        margin-bottom 49px
+    .product-content
+        width 100%
+        &__info
+            display flex
+            padding-bottom 48px
+            border-bottom 2px solid #ECECEC
+            margin-bottom 12px
+        &__img
+            margin-right 20px
+            img 
+                display block
+                object-fit cover
+                height 310px	
+                width 480px	
+                border-radius 6px
+        &__desc
+            display flex
+            flex-direction column
+        &__header
+            height 60px
+            background-color #F9FAFC
+            margin-bottom 12px
+
+            display flex
+            align-items center
+            justify-content space-between
+            padding 0 14px
+        &__title
+            color #3B4858
+            font-family: SourceSansPro-Bold
+            font-size 22px	
+            font-weight bold	
+            line-height 28px
+            text-transform uppercase
+        &__rating
+            .rating__stars
+                display flex
+                .star
+                    position relative
+                    width 18px
+                    height 18px    
+                    margin-right 4px
+                    &:after
+                        position absolute
+                        content ''
+                        display block
+                        top 50%
+                        transform translateY(-50%)
+                        opacity 1
+                        transition .3s
+                        icon_size_mask(18px, 18px, '../img/icons/star.svg')
+                        background-color #d9dee4
+                    &.rated 
+                        &:after
+                            position absolute
+                            content ''
+                            display block
+                            top 50%
+                            transform translateY(-50%)
+                            opacity 1
+                            transition .3s
+                            icon_size_mask(18px, 18px, '../img/icons/star.svg')
+                            background-color #FFC82C
+        &__excerpt
+            color $color_lessGray
+            font-size 20px	
+            line-height 34px
+            margin 0 0 
+            height 60%
+        &__footer
+            display flex
+            align-items center
+            .price
+                color #FF4949	
+                font-family "SourceSansPro-SemiBold"
+                font-size 24px	
+                font-weight 600
+                line-height 31px
+                margin-right 20px
+            .btn
+                width 280px
+                height 50px
+        &__text
+            color $color_lessGray
+            font-size 20px	
+            line-height 38px
+            padding-bottom 74px

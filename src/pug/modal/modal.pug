@@ -1,0 +1,14 @@
+.overlay
+.modal#modal
+    .modal__header
+        h2.modal__title Title of pop up
+        .modal__exit
+            .modal__exit-icon
+    form.modal__form(action='form.php')
+        label.modal__form-label(for="name")
+            span.modal__form-label-name Name
+            input.modal__form-label-input(type='text' required)
+        label.modal__form-label(for="tel")
+            span.modal__form-label-name Comment
+            input.modal__form-label-input(type='text' required)
+        button.btn.btn--a.modal__form-btn(type='submit') Save

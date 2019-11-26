@@ -11,12 +11,12 @@ $('.tabs-sec__controls a').on('click', function(e){
     $('.tabs-sec__list').find('ul').removeClass('active').eq($(this).index()).addClass('active');
 })
 
-// Select-list 
+// Select
 
 $(function(){
-    var selectList = $('.select-list')
-    var selectListList = $('.select-list__list')
-    var selectListItem = $('.select-list__list-item')
+    var selectList = $('.select')
+    var selectListList = $('.select__list')
+    var selectListItem = $('.select__list-item')
 
     selectList.on('click', function(){
         if(selectListList.hasClass('open')){
@@ -29,7 +29,7 @@ $(function(){
             selectListItem.on('click', function(){
                 var content = $(this).text();
                 $(this).css('color', '#3B4858').siblings().removeAttr('style');
-                $('.select-list__header ').text(content).css('color', '#3B4858');
+                $('.select__header ').text(content).css('color', '#3B4858');
             });
             selectListList.removeClass('open'); 
         } else {
@@ -39,8 +39,8 @@ $(function(){
 });
 
 // RATING STARS
-var star = $('.rating__stars .star')
-var inputValue = $('.form__rating #formRating')
+var star = $('.last .rating__stars .star')
+var inputValue = $('.last.form__rating #formRating')
 
 jQuery(document).ready(function($) {
     star.hover(function() {
@@ -74,33 +74,71 @@ $('.terms__item').on('click', function(e){
 });
 
 // LIST VIEW SWITCHER
-$('.view-switch__item_linear').on('click', function(){
+$('.view-switch__item--linear').on('click', function(){
     console.log('тык')
     if ($(this).not('active')) {
         $(this).addClass('active').siblings().removeClass('active');
-        $('.showcase__list').addClass('showcase__list_linear').removeClass('showcase__list_grid');
+        $('.showcase__list').addClass('linear').removeClass('grid');
     }
 });
-$('.view-switch__item_grid').on('click', function(){
+$('.view-switch__item--grid').on('click', function(){
     console.log('тык')
     if ($(this).not('active')) {
         $(this).addClass('active').siblings().removeClass('active');
-        $('.showcase__list').addClass('showcase__list_grid').removeClass('showcase__list_linear');
+        $('.showcase__list').addClass('grid').removeClass('linear');
     }
 });
 
 
 // LIST CRITERIA SELECTS 
+var firstText
+$('#criteriaSort').on('click', function(){
+    console.log('as');
+    firstText = $(this).children('.select__header').html();
+    $(this).find('.select__list').toggle();
+    $(this).find('.select__item a').on('click', function(){
+        var text = $(this).html();
+        $(this).text(firstText);
+        $(this).closest('.select').children('.select__header').html(text);
+        $(this).find('.select__list').hide();
+    });
+});
 
-$('.criteria__item_sort .criteria__select').on('click', function(){
+
+$('#criteriaSort').on('click', function(){
+    console.log('as');
+    
     var firstText = $(this).children('.select__header').html();
     $(this).find('.select__list').toggle();
     $(this).find('.select__item a').on('click', function(){
         var text = $(this).html();
         $(this).text(firstText);
-        $(this).closest('.criteria__select').children('.select__header').html(text);
+        $(this).closest('.select').children('.select__header').html(text);
         $(this).find('.select__list').hide();
-        return this;
     });
 });
 
+$('#criteriaDisplay').on('click', function(){
+    console.log('as');
+    
+    var firstText = $(this).children('.select__header').html();
+    $(this).find('.select__list').toggle();
+    $(this).find('.select__item a').on('click', function(){
+        var text = $(this).html();
+        $(this).text(firstText);
+        $(this).closest('.select').children('.select__header').html(text);
+        $(this).find('.select__list').hide();
+    });
+});
+
+//  MODAL
+$('.contacts-support .btn').click(function(){
+    $('.overlay').show();
+    $('#modal').show(200);
+    $('body').css('overflow', 'hidden');
+});
+    
+$('.overlay, .modal__exit').click(function(){
+$('#modal, .overlay').hide();
+$('body').css('overflow', '');
+});

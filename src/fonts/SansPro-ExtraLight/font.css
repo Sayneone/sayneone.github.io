@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'SourceSansPro-ExtraLight';
+  src: url('SourceSansPro-ExtraLight.eot');
+  src: url('SourceSansPro-ExtraLight.eot?#iefix') format('embedded-opentype'),
+       url('SourceSansPro-ExtraLight.svg#SourceSansPro-ExtraLight') format('svg'),
+       url('SourceSansPro-ExtraLight.ttf') format('truetype'),
+       url('SourceSansPro-ExtraLight.woff') format('woff'),
+       url('SourceSansPro-ExtraLight.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
