@@ -39,8 +39,8 @@ $(function(){
 });
 
 // RATING STARS
-var star = $('.last .rating__stars .star')
-var inputValue = $('.last.form__rating #formRating')
+var star = $('.last-sec .rating__stars .star')
+var inputValue = $('.last-sec .form__rating #formRating')
 
 jQuery(document).ready(function($) {
     star.hover(function() {
@@ -55,22 +55,23 @@ jQuery(document).ready(function($) {
     })
 });
 // VALIDATION 
-$('.form').on('keyup',function(){
-    if( $('.last-sec label__textarea textarea').val().length != 0 &&  
-    $('.last-sec label__name input').val().length != 0 &&
-    $('.last-sec label__email input').val().length != 0 )
+$('.last-sec__form').on('keyup',function(){
+    if( $('.last-sec__form .label__textarea textarea').val().length != 0 &&  
+    $('.last-sec__form .label__name input').val().length != 0 &&
+    $('.last-sec__form .label__email input').val().length != 0 )
     {
-        $('.form__btn button').removeAttr('disabled')
+        $('.last-sec__form .form__buttons .btn').removeAttr('disabled');
     } else {
-        $('.form__buttons button').attr('disabled')
+        $('.last-sec__form .form__buttons .btn').attr('disabled');
     }
-})
+});
 
 // TERMS
 
-$('.terms__item').on('click', function(e){
-    e.preventDefault()
+$(' .terms .terms__item').on('click', function(e){
+    e.preventDefault();
     $(this).find('.block').toggleClass('active')
+    
 });
 
 // LIST VIEW SWITCHER

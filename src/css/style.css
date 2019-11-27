@@ -2066,12 +2066,11 @@ template {
 }
 .footer .container .terms__item {
   margin-bottom: 10px;
-  position: relative;
 }
-.footer .container .terms__item.active > .block {
+.footer .container .terms__item position relative .block.active {
   display: block;
 }
-.footer .container .terms__item.active > .terms__link {
+.footer .container .terms__item position relative .terms__link.active {
   color: #1fb6ff;
 }
 .footer .container .terms__link {
