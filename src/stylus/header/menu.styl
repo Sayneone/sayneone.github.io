@@ -10,7 +10,7 @@
                 color #08a5f1
             & > .link:after
                 border-top-color:  #08a5f1 !important
-    &__item
+    &-item
         center()
         width 89px
         height inherit
@@ -27,56 +27,56 @@
             margin-right 0
         .link
             font-weight bold
-    .dropdown 
-        a
-            position relative
-            margin-right 10px
-        & > .link:after
-            content ''
-            position: absolute
-            right -15px
-            top 40%
-            border 5px solid transparent
-            border-top 5px solid $color_lilGray
-        &:hover > .link:after
-            border-top-color:  #08a5f1
-                
-        &:hover .dropdown__list 
-            display block
-        &__list 
-            display none
-            position absolute
-            background-color white
-            z-index 10
-            top 60px
-            height max-content
-            box-shadow 0 2px 4px 0 rgba(59,72,88,0.4)
-            border-radius 6px
-            padding 17px 15px 15px
-            &:before
-                display block
-                z-index -1
+        &.dropdown 
+            a
+                position relative
+                margin-right 10px
+            & > .link:after
                 content ''
-                position absolute
-                left 50%
-                transform translate(-50%, -41px)rotate(180deg)
-                border 14px solid transparent
-                border-top 10px solid white
-            &:after
+                position: absolute
+                right -15px
+                top 40%
+                border 5px solid transparent
+                border-top 5px solid $color_lilGray
+            &:hover > .link:after
+                border-top-color:  #08a5f1
+                    
+            &:hover .dropdown-list 
                 display block
-                z-index -2
-                content ''
+            &-list 
+                display none
                 position absolute
-                left 50%
-                transform translate(-50%, -123px)rotate(180deg)
-                border 15px solid transparent
-                border-top 11px solid rgba(0, 0, 0, 0.07)
-        &__item
-            margin-bottom 10px
-            font-size 16px
-            line-height 20px
-            &:hover > a
-                color #3B4858
-            &:last-child
-                margin-bottom 0
+                background-color white
+                z-index 10
+                top 60px
+                height max-content
+                box-shadow 0 2px 4px 0 rgba(59,72,88,0.4)
+                border-radius 6px
+                padding 17px 15px 15px
+                &:before
+                    display block
+                    z-index -1
+                    content ''
+                    position absolute
+                    left 50%
+                    transform translate(-50%, -41px)rotate(180deg)
+                    border 14px solid transparent
+                    border-top 10px solid white
+                &:after
+                    display block
+                    z-index -2
+                    content ''
+                    position absolute
+                    left 50%
+                    transform translate(-50%, -123px)rotate(180deg)
+                    border 15px solid transparent
+                    border-top 11px solid rgba(0, 0, 0, 0.07)
+            &__item
+                margin-bottom 10px
+                font-size 16px
+                line-height 20px
+                &:hover > a
+                    color #3B4858
+                &:last-child
+                    margin-bottom 0
 
