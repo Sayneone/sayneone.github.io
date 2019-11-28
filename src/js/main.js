@@ -1,14 +1,14 @@
 
 // Tabs section
-$('.tabs-sec__controls a').on('click', function(e){
+$('.tabs-sec .controls a').on('click', function(e){
     e.preventDefault();
-    $.each($('.tabs-sec__controls a'), function(index, value) {
+    $.each($('.tabs-sec .controls a'), function(index, value) {
         if ($(this).hasClass('active')) {
             $(this).removeClass('active')
         };
     });
     $(this).addClass('active');
-    $('.tabs-sec__list').find('ul').removeClass('active').eq($(this).index()).addClass('active');
+    $('.tabs-sec .list').find('ul').removeClass('active').eq($(this).index()).addClass('active');
 })
 
 // Select

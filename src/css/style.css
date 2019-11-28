@@ -57,7 +57,8 @@
 .article-sec__container,
 .listing-sec__container,
 .gradient-sec__container,
-.imputs-sec__container {
+.imputs-sec__container,
+.tabs-sec__container {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
@@ -225,7 +226,8 @@ span {
 .link--b.bold {
   font-weight: bold;
 }
-.btn {
+.btn,
+.tabs-sec__container .controls-item {
   font-weight: 700;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -620,7 +622,8 @@ p {
 }
 .section-title,
 .listing-sec .title,
-.gradient-sec .title {
+.gradient-sec .title,
+.tabs-sec__container .title {
   font-family: SourceSansPro-bold;
   text-transform: uppercase;
 }
@@ -1567,20 +1570,20 @@ template {
 .tabs-sec {
   margin-bottom: 81px;
 }
-.tabs-sec .container {
+.tabs-sec__container {
   position: relative;
 }
-.tabs-sec .section-title {
+.tabs-sec__container .title {
   margin-bottom: 29px;
 }
-.tabs-sec__controls {
+.tabs-sec__container .controls {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
 }
-.tabs-sec__controls-item {
+.tabs-sec__container .controls-item {
   font-family: SourceSansPro-Bold;
   border: 0;
   margin-right: 40px;
@@ -1589,13 +1592,13 @@ template {
   text-transform: uppercase;
   color: #8392a6;
 }
-.tabs-sec__controls-item:hover {
+.tabs-sec__container .controls-item:hover {
   color: rgba(59,72,88,0.9);
 }
-.tabs-sec__controls-item.active {
+.tabs-sec__container .controls-item.active {
   color: #1fb6ff;
 }
-.tabs-sec__list ul {
+.tabs-sec__container .list__item {
   display: none;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -1605,7 +1608,7 @@ template {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.tabs-sec__list ul.active {
+.tabs-sec__container .list__item.active {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
