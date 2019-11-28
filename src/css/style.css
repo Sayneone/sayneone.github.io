@@ -56,7 +56,8 @@
 .slider-sec__container,
 .article-sec__container,
 .listing-sec__container,
-.gradient-sec__container {
+.gradient-sec__container,
+.imputs-sec__container {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
@@ -1540,7 +1541,7 @@ template {
 .imputs-sec {
   margin-bottom: 40px;
 }
-.imputs-sec .imputs-sec__content {
+.imputs-sec .content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1555,12 +1556,12 @@ template {
           align-items: center;
   width: 100%;
 }
-.imputs-sec h4 {
+.imputs-sec .content__title {
   margin-bottom: 3px;
   text-transform: capitalize;
   font-weight: 300;
 }
-.imputs-sec .irs {
+.imputs-sec .content .irs {
   width: 986px;
 }
 .tabs-sec {
