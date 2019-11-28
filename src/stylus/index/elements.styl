@@ -1,23 +1,26 @@
 .elements-sec
     margin-bottom 64px
-    .section-title
-        margin-bottom 54px
-    .elements__content
-        display flex
-        justify-content flex-start
-        align-items: center
-        .btn--a
-            margin-right 40px
-            width 129px
-            height 40px
+    &__container
+        @extend .container
+        .title
+            @extend .section-title
+            margin-bottom 54px
+        .content
+            display flex
+            justify-content flex-start
+            align-items: center
+            .btn--a
+                margin-right 40px
+                width 129px
+                height 40px
 
-        .btn--b
-            margin-right 50px
-            width 129px
-            height 40px
-        .switch-btn 
-            margin-right 51px
-        .select
-            margin-right 74px
-        span 
-            margin-right 10px
+            .btn--b
+                margin-right 50px
+                width 129px
+                height 40px
+            .switch-btn 
+                margin-right 51px
+            .select
+                margin-right 74px
+            span 
+                margin-right 10px

@@ -58,7 +58,8 @@
 .listing-sec__container,
 .gradient-sec__container,
 .imputs-sec__container,
-.tabs-sec__container {
+.tabs-sec__container,
+.elements-sec__container {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
@@ -623,7 +624,8 @@ p {
 .section-title,
 .listing-sec .title,
 .gradient-sec .title,
-.tabs-sec__container .title {
+.tabs-sec__container .title,
+.elements-sec__container .title {
   font-family: SourceSansPro-bold;
   text-transform: uppercase;
 }
@@ -1657,10 +1659,10 @@ template {
 .elements-sec {
   margin-bottom: 64px;
 }
-.elements-sec .section-title {
+.elements-sec__container .title {
   margin-bottom: 54px;
 }
-.elements-sec .elements__content {
+.elements-sec__container .content {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1674,23 +1676,23 @@ template {
       -ms-flex-align: center;
           align-items: center;
 }
-.elements-sec .elements__content .btn--a {
+.elements-sec__container .content .btn--a {
   margin-right: 40px;
   width: 129px;
   height: 40px;
 }
-.elements-sec .elements__content .btn--b {
+.elements-sec__container .content .btn--b {
   margin-right: 50px;
   width: 129px;
   height: 40px;
 }
-.elements-sec .elements__content .switch-btn {
+.elements-sec__container .content .switch-btn {
   margin-right: 51px;
 }
-.elements-sec .elements__content .select {
+.elements-sec__container .content .select {
   margin-right: 74px;
 }
-.elements-sec .elements__content span {
+.elements-sec__container .content span {
   margin-right: 10px;
 }
 .last-sec {
