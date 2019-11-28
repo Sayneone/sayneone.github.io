@@ -53,14 +53,16 @@
 }
 .container,
 .header__container,
-.slider-sec__container {
+.slider-sec__container,
+.article-sec__container {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
 }
 .container.small,
 .header__container.small,
-.slider-sec__container.small {
+.slider-sec__container.small,
+.article-sec__container.small {
   width: 780px;
 }
 a {
@@ -1352,6 +1354,9 @@ template {
 .article-sec {
   margin-top: 35px;
   margin-bottom: 102px;
+}
+.article-sec__container {
+  width: 780px;
 }
 .listing-sec {
   margin-bottom: 40px;
