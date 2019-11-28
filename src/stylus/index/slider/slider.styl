@@ -1,7 +1,8 @@
 @import 'index/slider/slick-theme'
 @import 'index/slider/slick'
 
-.slider-sec .container
+.slider-sec__container
+    @extend .container
     position relative 
 .slider-arrows
     position absolute
@@ -9,7 +10,7 @@
     justify-content space-between
     width 100%
     top: calc(50% - 42.5px)
-    .arrow__prew
+    &__prew
         position relative
         &:after
             position absolute
@@ -25,8 +26,7 @@
             background-color $color_bigRiff
         &:hover:before
             background-color rgba(255,255,255,0.9)
-
-    .arrow__next
+    &__next
         position relative
         transform rotate(180deg)
         &:after

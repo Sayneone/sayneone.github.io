@@ -2,8 +2,8 @@
 $(document).ready(function(){
     // Main slider
     $('.slider').slick({
-        prevArrow: $ ('.slider-arrows .arrow__prew'),
-        nextArrow: $ ('.slider-arrows .arrow__next'),
+        prevArrow: $ ('.slider-arrows__prew'),
+        nextArrow: $ ('.slider-arrows__next'),
         appendDots: $ ('.slider-dots'),
         dots: true
       });
