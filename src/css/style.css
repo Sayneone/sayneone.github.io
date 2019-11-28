@@ -54,16 +54,11 @@
 .container,
 .header__container,
 .slider-sec__container,
-.article-sec__container {
+.article-sec__container,
+.listing-sec__container {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
-}
-.container.small,
-.header__container.small,
-.slider-sec__container.small,
-.article-sec__container.small {
-  width: 780px;
 }
 a {
   text-decoration: none;
@@ -621,7 +616,8 @@ p {
   font-size: 16px;
   line-height: 24px;
 }
-.section-title {
+.section-title,
+.listing-sec .title {
   font-family: SourceSansPro-bold;
   text-transform: uppercase;
 }
@@ -1361,16 +1357,16 @@ template {
 .listing-sec {
   margin-bottom: 40px;
 }
-.listing-sec .container {
+.listing-sec__container {
   position: relative;
 }
-.listing-sec .section-title {
+.listing-sec .title {
   margin-bottom: 20px;
 }
-.listing-sec__title-quantity {
+.listing-sec .title__quantity {
   color: #8392a6;
 }
-.listing-sec__slider-arrows {
+.listing-sec .arrows {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1379,7 +1375,7 @@ template {
   top: -10px;
   right: 0;
 }
-.listing-sec__slider-arrows .arrow__next {
+.listing-sec .arrows .arrows__next {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1400,17 +1396,17 @@ template {
   cursor: pointer;
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .listing-sec__slider-arrows .arrow__next {
+  .listing-sec .arrows .arrows__next {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
     background-image: url("../img/icons/arrow-b.svg");
   }
 }
-.listing-sec__slider-arrows .arrow__next:hover {
+.listing-sec .arrows .arrows__next:hover {
   background-color: rgba(59,72,88,0.9);
 }
-.listing-sec__slider-arrows .arrow__prew {
+.listing-sec .arrows .arrows__prew {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1434,14 +1430,14 @@ template {
           transform: rotate(180deg);
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  .listing-sec__slider-arrows .arrow__prew {
+  .listing-sec .arrows .arrows__prew {
     background-color: transparent !important;
     -webkit-mask-image: none !important;
             mask-image: none !important;
     background-image: url("../img/icons/arrow-b.svg");
   }
 }
-.listing-sec__slider-arrows .arrow__prew:hover {
+.listing-sec .arrows .arrows__prew:hover {
   background-color: rgba(59,72,88,0.9);
 }
 .listing-sec .list__slider-item {

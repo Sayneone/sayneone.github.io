@@ -9,9 +9,9 @@ $(document).ready(function(){
       });
 
     // Listning slider
-    $('.listing-sec__list').slick({
-      prevArrow: $ ('.listing-sec__slider-arrows .arrow__next'),
-      nextArrow: $ ('.listing-sec__slider-arrows .arrow__prew'),
+    $('.listing-sec .list').slick({
+      prevArrow: $ ('.listing-sec .arrows__next'),
+      nextArrow: $ ('.listing-sec .arrows__prew'),
       }); 
     $(".js-range-slider").ionRangeSlider({
       type: "double",

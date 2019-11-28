@@ -1,23 +1,25 @@
   .listing-sec
     margin-bottom 40px
-    .container
+    &__container
+        @extend .container 
         position relative
-    .section-title
+    .title
+        @extend .section-title
         margin-bottom 20px
-    &__title-quantity
-        color $color_lilGray
-    &__slider-arrows
+        &__quantity
+            color $color_lilGray
+    .arrows
         display flex
         position absolute
         top -10px
         right 0
-        .arrow__next
+        .arrows__next
             display flex
             background-color $color_lilGray
             icon_size_mask(25px, 50px, '../img/icons/arrow-b.svg')
             &:hover 
                 background-color $color_lessGray
-        .arrow__prew
+        .arrows__prew
             display flex
             background-color $color_lilGray
             icon_size_mask(25px, 50px, '../img/icons/arrow-b.svg')
