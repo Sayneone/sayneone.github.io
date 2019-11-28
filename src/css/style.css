@@ -55,7 +55,8 @@
 .header__container,
 .slider-sec__container,
 .article-sec__container,
-.listing-sec__container {
+.listing-sec__container,
+.gradient-sec__container {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
@@ -617,7 +618,8 @@ p {
   line-height: 24px;
 }
 .section-title,
-.listing-sec .title {
+.listing-sec .title,
+.gradient-sec .title {
   font-family: SourceSansPro-bold;
   text-transform: uppercase;
 }
@@ -1517,19 +1519,19 @@ template {
 .gradient-sec {
   margin-bottom: 15px;
 }
-.gradient-sec__item {
+.gradient-sec .item {
   height: 368px;
   width: 1180px;
   -webkit-border-radius: 6px;
           border-radius: 6px;
   margin-bottom: 25px;
 }
-.gradient-sec__item.one {
+.gradient-sec .item.one {
   background: -webkit-linear-gradient(225deg, #32c5ff 0%, #b620e0 51.26%, #f7b500 100%);
   background: -o-linear-gradient(225deg, #32c5ff 0%, #b620e0 51.26%, #f7b500 100%);
   background: linear-gradient(225deg, #32c5ff 0%, #b620e0 51.26%, #f7b500 100%);
 }
-.gradient-sec__item.two {
+.gradient-sec .item.two {
   background: -webkit-gradient(linear, left top, left bottom, from(#6dd400), to(#f7b500));
   background: -webkit-linear-gradient(top, #6dd400 0%, #f7b500 100%);
   background: -o-linear-gradient(top, #6dd400 0%, #f7b500 100%);
