@@ -2,46 +2,45 @@
     table.cart-interface__table
         tbody
             tr.head
-                th.remove-col Remove
-                th.image-col Image
-                th.product-col Product(s)
-                th.price-col Price
-                th.qty-col Qty.
-                th.total-col Total
+                th.head__remove-col Remove
+                th.head__image-col Image
+                th.head__product-col Product(s)
+                th.head__price-col Price
+                th.head__qty-col Qty.
+                th.head__total-col Total
             tr.row
-                td.remove-cell  
+                td.row__remove-cell  
                     label.label__checkbox
                         .checkbox-btn
                             input.checkbox(type='checkbox' checked)
                             .knob
-                td.image-cell
+                td.row__image-cell
                     img(src="img/slider/1.jpg")
-                td.product-cell Google Analytics
-                td.price-cell $25.00
-                td.qty-cell 
-                    .qty-cell__wrap 1
-                td.total-cell $25.00
+                td.row__product-cell Google Analytics
+                td.row__price-cell $25.00
+                td.row__qty-cell 
+                    input.input
+                td.row__total-cell $25.00
     .cart-interface__btns
-        button.btn.btn--a Update cart
-        button.btn.btn--b Continue shopping
+        button.update-button Update cart
+        button.continue-button Continue shopping
     .cart-interface__total
-        .total__sub-row
-            span Sub-Total:
+        .sub-row
+            span.title Sub-Total:
             span.amount $25.00
-        .total__shipping-row
-            span Shipping:
+        .shipping-row
+            span.title Shipping:
             span.amount $25.00
-        .total__tax-row
-            span Tax:
+        .tax-row
+            span.title Tax:
             span.amount $25.00
-        .total__result-row
-            span Total:
+        .result-row
+            span.title Total:
             span.amount $25.00
-        .total__agreement
+        .agreement
             label.label__checkbox
                 .checkbox-btn
                     input.checkbox(type='checkbox')
                     .knob
-            span I Agree. <a href="#" class="link--b"> Our Terms of Service </a> and Privacy Notice are linked here for your review.
-        .total__checkout-btn
-            .btn.btn--a checkout
+            span.agreement__desc I Agree. <a href="#" class="link--b"> Our Terms of Service </a> and Privacy Notice are linked here for your review.
+        button.checkout-btn checkout

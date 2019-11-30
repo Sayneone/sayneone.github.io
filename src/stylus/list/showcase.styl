@@ -25,69 +25,70 @@
         .criteria
             display flex
             &__item
+                width 180px
                 display flex
                 margin-right 88px
-            &__title
-                text-transform uppercase
-                color $color__moreGray
-                font-size 18px 
-                line-height 23px
-                margin-right 13px
-            &__select
-                position relative
-            &__header
-                text-transform uppercase
-                cursor pointer
-                display inline-block
-                position relative
-                color $color_darkGray
-                font-size 18px	
-                line-height 23px
-                &:after
-                    content ''
-                    position absolute
-                    right -15px
-                    top 40%
-                    border 5px solid transparent
-                    border-top 5px solid $color_darkGray
-            &__list
-                display none
-                position absolute
-                background-color white
-                z-index 10
-                top 34px
-                height max-content
-                box-shadow 0 2px 4px 0 rgba(59,72,88,0.4)
-                border-radius 6px
-                width max-content
-                padding 17px 15px 15px
-                &:before
-                    display block
-                    z-index -1
-                    content ''
-                    position absolute
-                    left 50%
-                    transform translate(-50%, -41px)rotate(180deg)
-                    border 14px solid transparent
-                    border-top 10px solid white
-                &:after
-                    display block
-                    z-index -2
-                    content ''
-                    position absolute
-                    left 50%
-                    transform translate(-50%, -104px)rotate(180deg)
-                    border 15px solid transparent
-                    border-top 11px solid rgba(0, 0, 0, 0.03)
-                    .item > a 
+                .item-title
+                    text-transform uppercase
+                    color $color__moreGray
+                    font-size 18px 
+                    line-height 23px
+                    margin-right 13px
+                .item-select
+                    position relative
+                    &__header
+                        text-transform uppercase
                         cursor pointer
-                        color $color_lilGray	
-                        font-family SourceSansPro-SemiBold
-                        font-size 16px	
-                        font-weight 600	
-                        line-height 30px
-                        &:hover 
-                            color $color_lessGray
+                        display inline-block
+                        position relative
+                        color $color_darkGray
+                        font-size 18px	
+                        line-height 23px
+                        &:after
+                            content ''
+                            position absolute
+                            right -15px
+                            top 40%
+                            border 5px solid transparent
+                            border-top 5px solid $color_darkGray
+                    &__list
+                        display none
+                        position absolute
+                        background-color white
+                        z-index 10
+                        top 34px
+                        height max-content
+                        box-shadow 0 2px 4px 0 rgba(59,72,88,0.4)
+                        border-radius 6px
+                        width max-content
+                        padding 17px 15px 15px
+                        &:before
+                            display block
+                            z-index -1
+                            content ''
+                            position absolute
+                            left 50%
+                            transform translate(-50%, -41px)rotate(180deg)
+                            border 14px solid transparent
+                            border-top 10px solid white
+                        &:after
+                            display block
+                            z-index -2
+                            content ''
+                            position absolute
+                            left 50%
+                            transform translate(-50%, -104px)rotate(180deg)
+                            border 15px solid transparent
+                            border-top 11px solid rgba(0, 0, 0, 0.03)
+                        .item > a 
+                            cursor pointer
+                            color $color_lilGray	
+                            font-family SourceSansPro-SemiBold
+                            font-size 16px	
+                            font-weight 600	
+                            line-height 30px
+                            &:hover 
+                                color $color_lessGray
         .view-switch
             display flex
             .view-switch__item
@@ -204,6 +205,8 @@
                 button
                     width 280px
     .showcase__btn
+        @extend .btn
+        @extend .btn--b
         width 203px
         height 50px
         align-self center

@@ -96,20 +96,25 @@ $('.view-switch__item--grid').on('click', function(){
 });
 
 
-// LIST CRITERIA SELECTS 
-var firstText
+// LIST CRITERIA SELECTS
 $('#criteriaSort').on('click', function(){
-    console.log('as');
-    firstText = $(this).children('.select__header').html();
-    $(this).find('.select__list').toggle();
-    $(this).find('.select__item a').on('click', function(){
+    $(this).find('.item-select__list').toggle();
+
+    $(this).find('.item-select__list .item a').on('click', function(){
         var text = $(this).html();
-        $(this).text(firstText);
-        $(this).closest('.select').children('.select__header').html(text);
-        $(this).find('.select__list').hide();
+        $(this).closest('.item-select').children('.item-select__header').html(text);
+        $(this).find('.item-select__list').hide();
     });
 });
+$('#criteriaDisplay').on('click', function(){
+    $(this).find('.item-select__list').toggle();
 
+    $(this).find('.item-select__list .item a').on('click', function(){
+        var text = $(this).html();
+        $(this).closest('.item-select').children('.item-select__header').html(text);
+        $(this).find('.item-select__list').hide();
+    });
+});
 
 $('#criteriaSort').on('click', function(){
     console.log('as');

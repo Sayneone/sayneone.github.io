@@ -34,43 +34,43 @@
                     font-family SourceSansPro-SemiBold
                     padding 0 20px
                     height 55px
-                    .remove-col
+                    &__remove-col
                         font-family inherit
                         width 143px
                         padding-left 20px
-                    .image-col
+                    &__image-col
                         font-family inherit
                         width 140px
-                    .product-col
+                    &__product-col
                         font-family inherit
                         width 401px
-                    .price-col
+                    &__price-col
                         font-family inherit
                         width 140px
-                    .qty-col
+                    &__qty-col
                         font-family inherit
                         width 154px
                         padding-left 20px
-                    .total-col
+                    &__total-col
                         font-family inherit
                         width 162px
                 .row
                     height 121px
-                    .remove-cell
+                    &__remove-cell
                         padding-left 33px
-                    .image-cell
+                    &__image-cell
                         img 
                             display block
                             object-fit cover
                             height 65px
                             width 90px
                             border-radius 6px
-                    .product-cell
+                    &__product-cell
                         font-family SourceSansPro-SemiBold
-                    .price-cell
+                    &__price-cell
                         font-family SourceSansPro-SemiBold
-                    .qty-cell
-                        .qty-cell__wrap
+                    &__qty-cell
+                        .input
                             font-family SourceSansPro-SemiBold
                             font-size 18px
                             line-height 30
@@ -81,7 +81,7 @@
                             width 71px
                             border 1px solid #E3E9EF
                             border-radius 6px
-                    .total-cell
+                    &__total-cell
                          font-family SourceSansPro-SemiBold
             &__btns 
                 width 100%
@@ -92,47 +92,55 @@
                 justify-content flex-end
                 padding 0 10px
                 margin-bottom 61px
-                .btn--a
+                .update-button
+                    @extend .btn--a
+                    @extend .btn
                     margin-right 20px
                     width 129px
-                .btn--b
+                .continue-button
+                    @extend .btn--b
+                    @extend .btn
                     width 197px    
             &__total
                 width 381px
                 background-color $color_likeWhite 
                 padding: 20px 25px 26px
                 margin-bottom 181px
-                .total
-                    &__sub-row,
-                    &__shipping-row,
-                    &__tax-row
-                        color $color_darkGray
-                        font-size 16px	
-                        line-height 20px
-                        display flex
-                        align-items center
-                        justify-content space-between
-                        margin-bottom 28px
-                        &:last-child
-                            margin-bottom 31px
-                    &__result-row
-                        font-family SourceSansPro-SemiBold
-                        font-size 28px	
-                        line-height 36px       
-                        border 1px solid #E1E8F0
-                        border-left 0
-                        border-right 0 
-                        padding 10px 0       
-                        display flex
-                        align-items center
-                        justify-content space-between
+                .sub-row,
+                .shipping-row,
+                .tax-row
+                    color $color_darkGray
+                    font-size 16px	
+                    line-height 20px
+                    display flex
+                    align-items center
+                    justify-content space-between
+                    margin-bottom 28px
+                    &:last-child
                         margin-bottom 31px
-                    &__agreement
-                        color: rgba(59,72,88,0.9);
-                        display flex
-                        margin-bottom 34px
-                        .label__checkbox
-                            margin-right 8px
+                .result-row
+                    font-family SourceSansPro-SemiBold
+                    font-size 28px	
+                    line-height 36px       
+                    border 1px solid #E1E8F0
+                    border-left 0
+                    border-right 0 
+                    padding 10px 0       
+                    display flex
+                    align-items center
+                    justify-content space-between
+                    margin-bottom 31px
+                .agreement
+                    color: rgba(59,72,88,0.9);
+                    display flex
+                    margin-bottom 34px
+                    .label__checkbox
+                        margin-right 8px
+                .checkout-btn
+                    width 100%
+                    text-transform uppercase
+                    @extend .btn
+                    @extend .btn--a
         &__empty-cart
             display none
             width 100%

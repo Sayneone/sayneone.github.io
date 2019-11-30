@@ -76,15 +76,15 @@
               <table class="cart-interface__table">
                 <tbody>
                   <tr class="head">
-                    <th class="remove-col">Remove</th>
-                    <th class="image-col">Image</th>
-                    <th class="product-col">Product(s)</th>
-                    <th class="price-col">Price</th>
-                    <th class="qty-col">Qty.</th>
-                    <th class="total-col">Total</th>
+                    <th class="head__remove-col">Remove</th>
+                    <th class="head__image-col">Image</th>
+                    <th class="head__product-col">Product(s)</th>
+                    <th class="head__price-col">Price</th>
+                    <th class="head__qty-col">Qty.</th>
+                    <th class="head__total-col">Total</th>
                   </tr>
                   <tr class="row">
-                    <td class="remove-cell"> 
+                    <td class="row__remove-cell"> 
                       <label class="label__checkbox">
                         <div class="checkbox-btn">
                           <input class="checkbox" type="checkbox" checked>
@@ -92,36 +92,34 @@
                         </div>
                       </label>
                     </td>
-                    <td class="image-cell"><img src="img/slider/1.jpg"></td>
-                    <td class="product-cell">Google Analytics</td>
-                    <td class="price-cell">$25.00</td>
-                    <td class="qty-cell"> 
-                      <div class="qty-cell__wrap">1</div>
+                    <td class="row__image-cell"><img src="img/slider/1.jpg"></td>
+                    <td class="row__product-cell">Google Analytics</td>
+                    <td class="row__price-cell">$25.00</td>
+                    <td class="row__qty-cell"> 
+                      <input class="input">
                     </td>
-                    <td class="total-cell">$25.00</td>
+                    <td class="row__total-cell">$25.00</td>
                   </tr>
                 </tbody>
               </table>
               <div class="cart-interface__btns">
-                <button class="btn btn--a">Update cart</button>
-                <button class="btn btn--b">Continue shopping</button>
+                <button class="update-button">Update cart</button>
+                <button class="continue-button">Continue shopping</button>
               </div>
               <div class="cart-interface__total">
-                <div class="total__sub-row"><span>Sub-Total:</span><span class="amount">$25.00</span></div>
-                <div class="total__shipping-row"><span>Shipping:</span><span class="amount">$25.00</span></div>
-                <div class="total__tax-row"><span>Tax:</span><span class="amount">$25.00</span></div>
-                <div class="total__result-row"><span>Total:</span><span class="amount">$25.00</span></div>
-                <div class="total__agreement">
+                <div class="sub-row"><span class="title">Sub-Total:</span><span class="amount">$25.00</span></div>
+                <div class="shipping-row"><span class="title">Shipping:</span><span class="amount">$25.00</span></div>
+                <div class="tax-row"><span class="title">Tax:</span><span class="amount">$25.00</span></div>
+                <div class="result-row"><span class="title">Total:</span><span class="amount">$25.00</span></div>
+                <div class="agreement">
                   <label class="label__checkbox">
                     <div class="checkbox-btn">
                       <input class="checkbox" type="checkbox">
                       <div class="knob"></div>
                     </div>
-                  </label><span>I Agree. <a href="#" class="link--b"> Our Terms of Service </a> and Privacy Notice are linked here for your review.</span>
+                  </label><span class="agreement__desc">I Agree. <a href="#" class="link--b"> Our Terms of Service </a> and Privacy Notice are linked here for your review.</span>
                 </div>
-                <div class="total__checkout-btn">
-                  <div class="btn btn--a">checkout</div>
-                </div>
+                <button class="checkout-btn">checkout</button>
               </div>
             </div>
             <div class="cart-content__empty-cart">

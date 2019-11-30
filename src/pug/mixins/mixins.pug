@@ -20,11 +20,11 @@ mixin tabs-sec__item(url, title, author, desc)
 
 - var listSecCategories = [{name : 'category 1' },{ name : 'category 2' },{ name : 'category 3' },{ name : 'category 4' },{ name : 'category 5' }]
 mixin list-sec__nav(title)
-    aside.list-sec__nav
-        h5.nav__title= title
-        ul.nav__list
+    aside.list-nav
+        h5.list-nav__title= title
+        ul.list-nav__list
         for i in listSecCategories
-            li.list__item
+            li.item
                 a(href='#')= i.name
 
 mixin showcase__item(url, title, starsQuantity, desk, price)

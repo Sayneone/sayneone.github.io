@@ -3,19 +3,21 @@
     .showcase__sorting-menu
         .criteria
             .criteria__item
-                span.criteria__title sort by:
-                .criteria__select#criteriaSort
-                    span.criteria__header position
-                    ul.criteria__list
+                span.item-title sort by:
+                .item-select#criteriaSort
+                    span.item-select__header position
+                    ul.item-select__list
                         li.item 
                             a price
                         li.item 
                             a data
+                        li.item
+                            a position
             .criteria__item
-                span.criteria__title display
-                .criteria__select#criteriaDisplay
-                    span.criteria__header 6 per page
-                    ul.criteria__list
+                span.item-title display
+                .item-select#criteriaDisplay
+                    span.item-select__header 6 per page
+                    ul.item-select__list
                         li.item  
                             a 9 per page
                         li.item     
@@ -30,4 +32,4 @@
         +showcase__item('img/listing/4.jpg', 'Caribien island', 3, 'пояснение к чему-то','$511.00')
         +showcase__item('img/listing/5.jpg', 'Caribien island', 3, 'пояснение к чему-то','$511.00')
         +showcase__item('img/listing/6.jpg', 'Caribien island', 3, 'пояснение к чему-то','$511.00')
-    button.showcase__btn.btn.btn--b Load more
+    button.showcase__btn Load more
