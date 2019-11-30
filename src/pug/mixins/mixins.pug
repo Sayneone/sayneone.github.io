@@ -2,20 +2,20 @@ mixin ui__color-block(color)
     .ui__color-block(style='width: 40px; height: 40px; background-color: ' + color)
 
 mixin listing-sec__item(url, title, author, desc, time)
-    li.listing-sec__item
-        .listing-sec__item-img
+    li.item
+        .item__img
             img(src= url)
-            .listing-sec__item-img-time= time
-        .listing-sec__item-title=  title
-        .listing-sec__item-author= author
-        .listing-sec__item-desc= desc
+            .img-time= time
+        .item__title=  title
+        .item__author= author
+        .item__desc= desc
 
 mixin tabs-sec__item(url, title, author, desc)
-    li.tabs-sec__item
-        .tabs-sec__item-img
+    li.item
+        .item__img
             img(src= url)
-        .tabs-sec__item-title=  title
-        .tabs-sec__item-author= author
+        .item__title=  title
+        .item__author= author
 
 
 - var listSecCategories = [{name : 'category 1' },{ name : 'category 2' },{ name : 'category 3' },{ name : 'category 4' },{ name : 'category 5' }]

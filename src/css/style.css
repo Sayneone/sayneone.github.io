@@ -235,6 +235,7 @@ span {
 }
 .btn,
 .tabs-sec__container .controls-item,
+.last-sec__container .form .form__buttons .button,
 .footer__container .contacts-support__btn {
   font-weight: 700;
   -webkit-transition: 0.3s;
@@ -243,7 +244,8 @@ span {
   text-align: center;
   cursor: pointer;
 }
-.btn--a {
+.btn--a,
+.last-sec__container .form .form__buttons .button {
   border: 1px solid #1fb6ff;
   -webkit-border-radius: 6px;
           border-radius: 6px;
@@ -252,11 +254,13 @@ span {
   background-color: #1fb6ff;
   color: #fff;
 }
-.btn--a:hover {
+.btn--a:hover,
+.last-sec__container .form .form__buttons .button:hover {
   background-color: #08a5f1;
   border-color: #08a5f1;
 }
-.btn--a:disabled {
+.btn--a:disabled,
+.last-sec__container .form .form__buttons .button:disabled {
   background-color: #8392a6;
   border-color: #8392a6;
   opacity: 0.3;
@@ -1471,16 +1475,16 @@ template {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.listing-sec__item {
+.listing-sec .item {
   width: 280px;
   margin-bottom: 37px;
 }
-.listing-sec__item-img {
+.listing-sec .item__img {
   position: relative;
   cursor: pointer;
   margin-bottom: 10px;
 }
-.listing-sec__item-img img {
+.listing-sec .item__img img {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1489,7 +1493,7 @@ template {
   -webkit-border-radius: 6px;
           border-radius: 6px;
 }
-.listing-sec__item-img-time {
+.listing-sec .item__img .img-time {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1511,7 +1515,7 @@ template {
   right: 5px;
   background-color: rgba(59,72,88,0.9);
 }
-.listing-sec__item-title {
+.listing-sec .item__title {
   color: #3b4858;
   font-family: 'SourceSansPro-SemiBold';
   font-size: 16px;
@@ -1519,14 +1523,14 @@ template {
   line-height: 20px;
   margin-bottom: 2px;
 }
-.listing-sec__item-author {
+.listing-sec .item__author {
   color: #3b4859;
   font-family: 'SourceSansPro-Regular';
   font-size: 14px;
   line-height: 20px;
   margin-bottom: 5px;
 }
-.listing-sec__item-desc {
+.listing-sec .item__desc {
   color: #8392a6;
   font-family: 'SourceSansPro-Regular';
   font-size: 14px;
@@ -1626,7 +1630,7 @@ template {
   display: -ms-flexbox;
   display: flex;
 }
-.tabs-sec__item {
+.tabs-sec .item {
   text-align: left;
   display: -webkit-box;
   display: -webkit-flex;
@@ -1638,12 +1642,12 @@ template {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.tabs-sec__item-img {
+.tabs-sec .item__img {
   position: relative;
   cursor: pointer;
   margin-bottom: 10px;
 }
-.tabs-sec__item-img img {
+.tabs-sec .item__img img {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1652,7 +1656,7 @@ template {
   -webkit-border-radius: 6px;
           border-radius: 6px;
 }
-.tabs-sec__item-title {
+.tabs-sec .item__title {
   color: #3b4858;
   font-family: 'SourceSansPro-SemiBold';
   font-size: 16px;
@@ -1660,7 +1664,7 @@ template {
   line-height: 20px;
   margin-bottom: 5px;
 }
-.tabs-sec__item-author {
+.tabs-sec .item__author {
   color: #3b4859;
   font-family: 'SourceSansPro-Regular';
   font-size: 14px;
@@ -1915,7 +1919,7 @@ template {
           flex-direction: column;
   margin-top: 30px;
 }
-.last-sec__container .form .form__buttons button {
+.last-sec__container .form .form__buttons .button {
   margin-top: 40px;
   width: 175px;
 }
