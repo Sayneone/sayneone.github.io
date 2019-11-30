@@ -38,20 +38,24 @@ $(function(){
     })
 });
 
-// RATING STARS
-var star = $('.last-sec .rating__stars .star')
-var inputValue = $('.last-sec .form__rating #formRating')
+// RATING STARS(form)
+var star = $('.last-sec .rating__star')
+var stars = $('.last-sec .rating')
+var inputValue = $('.last-sec #formRating')
+var index 
 
 jQuery(document).ready(function($) {
     star.hover(function() {
         $(this).addClass('active');
-        $(this).parent().find('.star:lt(' + $(this).index() + ')').addClass('active');
+        $(this).parent().find('.rating__star:lt(' + $(this).index() + ')').addClass('active');
+        $(this).parent().find('.rating__star').removeClass('rated');
     }).mouseout(function() {
-            $(this).parent().find('.star').removeClass('active');
+        $(this).parent().find('.rating__star').removeClass('active');
+        $(this).parent().find('.rating__star:lt('+ index +')').addClass('rated')
     }).click(function(){
-        $(this).parent().find('.star').removeClass('rated');
-        $(this).parent().find('.star:lt(' + ($(this).index() + 1) + ')').addClass('rated');
-        inputValue.attr('value',   + ($(this).index() + 1)  )
+        $(this).parent().find('.rating__star').removeClass('rated');
+        $(this).parent().find('.rating__star:lt(' + (index = $(this).index() + 1)  +')').addClass('rated')
+        inputValue.attr('value',   + ($(this).index() + 1)  );
     })
 });
 // VALIDATION 
@@ -68,9 +72,10 @@ $('.last-sec__form').on('keyup',function(){
 
 // TERMS
 
-$(' .terms .terms__item').on('click', function(e){
+$(' .terms .terms-item').on('click', function(e){
     e.preventDefault();
-    $(this).find('.block').toggleClass('active')
+    $(this).find('.terms-item__block').toggleClass('active');
+    $(this).find('.terms-item__link').toggleClass('active');
     
 });
 

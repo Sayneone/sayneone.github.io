@@ -2,131 +2,140 @@
     border-top 1px solid #ECECEC;
     padding-top 40px
     padding-bottom: 30px
-    .container
+    &__container
+        @extend .container
         display flex
         justify-content space-between
         font-size 16px
         line-height 24px
         .about
             width 480px
-            .text
+            &__text
                 color #8392A6
         .terms
             width 180px
-            .title
+            &__title
                 font-family SourceSansPro-Bold
                 color $color_darkGray
                 font-size 16px
                 margin-bottom 10px
-            &__item
-                margin-bottom 10px
-                position relative
-                    .block.active
-                        display block
-                     .terms__link.active
-                        color #1FB6FF
-                
-
-            &__link
-                font-family SourceSansPro-Regular
-            .block
-                display none
-                position absolute
-                left 50%
-                height 515px	
-                transform translate(-58%, -556px)
-                width 520px
-                height 515px
-                background-color white
-                border-radius 6px
-                box-shadow 0 2px 4px 0 rgba(59,72,88,0.4)
-                z-index 10
-                &__header
-                    display flex
-                    align-items center
-                    justify-content flex-start
+            &__list
+                .terms-item
+                    margin-bottom 10px
                     position relative
-                    height 70px
-                    width 100%
-                    padding-left 40px
-                    background-color #1FB6FF
-                    border-radius 6px 6px 0 0
-                    .title
-                        font-family SourceSansPro-SemiBold
-                        font-size 32px	
-                        font-weight 600
-                        line-height 40px
-                        color white
-                        margin-bottom 0
-                &__desc
-                    padding 25px 40px 5px 
-                    height 430px
-                    overflow auto
-                &:after
-                    display block
-                    z-index -2
-                    content ''
-                    position absolute
-                    left 50%
-                    transform translate(-50%, 33%)
-                    border 28px solid transparent
-                    border-top 20px solid rgba(0, 0, 0, 0.07)
-                 &:before
-                    display block
-                    z-index 1
-                    content ''
-                    position absolute
-                    left 50%
-                    transform translate(-50%, 1063%)
-                    border 28px solid transparent
-                    border-top 20px solid white
-                
-                .exit
-                    height 20px
-                    width 20px
-                    position absolute
-                    top 20px
-                    right 10px
-                    cursor pointer
-                    .exit__line
-                        height 2px
-                        width 18px
-                        background-color rgba(255,255,255,0.66)
-                        transform rotate(45deg)
-                        &:before 
+                    &__link
+                        @extend .link--a
+                        font-family SourceSansPro-Regular
+                        &.active
+                            color #1FB6FF
+                    &__block
+                        display none
+                        position absolute
+                        left 50%
+                        height 515px	
+                        transform translate(-58%, -556px)
+                        width 520px
+                        height 515px
+                        background-color white
+                        border-radius 6px
+                        box-shadow 0 2px 4px 0 rgba(59,72,88,0.4)
+                        z-index 10
+                        &.active
+                            display block
+                        .block-header
+                            display flex
+                            align-items center
+                            justify-content flex-start
+                            position relative
+                            height 70px
+                            width 100%
+                            padding-left 40px
+                            background-color #1FB6FF
+                            border-radius 6px 6px 0 0
+                            &__title
+                                font-family SourceSansPro-SemiBold
+                                font-size 32px	
+                                font-weight 600
+                                line-height 40px
+                                color white
+                                margin-bottom 0
+                            &__exit
+                                height 20px
+                                width 20px
+                                position absolute
+                                top 20px
+                                right 10px
+                                cursor pointer
+                                .exit-line
+                                    height 2px
+                                    width 18px
+                                    background-color rgba(255,255,255,0.66)
+                                    transform rotate(45deg)
+                                    &:before 
+                                        content ''
+                                        height 2px
+                                        width 18px
+                                        background-color rgba(255,255,255,0.66)
+                                        position absolute
+                                        transform rotate(-90deg)
+                                &:hover .exit-line
+                                    background-color rgba(255,255,255,1)
+                                &:hover .exit-line:before
+                                    background-color rgba(255,255,255,1)
+                        .block-desc
+                            padding 25px 40px 5px 
+                            height 430px
+                            overflow auto
+                        &:after
+                            display block
+                            z-index -2
                             content ''
-                            height 2px
-                            width 18px
-                            background-color rgba(255,255,255,0.66)
                             position absolute
-                            transform rotate(-90deg)
-                    &:hover .exit__line
-                        background-color rgba(255,255,255,1)
-                    &:hover .exit__line:before
-                        background-color rgba(255,255,255,1)
+                            left 50%
+                            transform translate(-50%, 33%)
+                            border 28px solid transparent
+                            border-top 20px solid rgba(0, 0, 0, 0.07)
+                        &:before
+                            display block
+                            z-index 1
+                            content ''
+                            position absolute
+                            left 50%
+                            transform translate(-50%, 1063%)
+                            border 28px solid transparent
+                            border-top 20px solid white
+                        
+                   
             
 
         .contacts-support
             display flex
             flex-direction column
             width 170px
-            .title
+            &__title
                 font-family SourceSansPro-Bold
                 color $color_darkGray
                 font-size 16px
                 margin-bottom 10px
-            .mail
+            &__mail
                 @extend .link--a
                 margin-bottom 15px
-            .btn 
+            &__btn
+                @extend .btn
+                @extend .btn--b
                 width 166px
         .socials
             display flex
             flex-direction column
             width 170px
+            &__title
+                font-family SourceSansPro-Bold
+                color $color_darkGray
+                font-size 16px
+                margin-bottom 10px
             &__list
                 display flex
-                .socials__item
+                .socials-item
                     center()
                     width 42px
                     height 42px
@@ -151,9 +160,5 @@
                 .twitter
                     icon_size_mask(12.02px, 15.5px, '../img/icons/twitter.svg')
                     background-color #8392A6
-            .title
-                font-family SourceSansPro-Bold
-                color $color_darkGray
-                font-size 16px
-                margin-bottom 10px
+
             
