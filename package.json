@@ -33,7 +33,7 @@
     "csso": "^4.0.2",
     "gulp": "^3.9.1",
     "gulp-load-plugins": "^2.0.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "load-plugins": "^2.1.2"
   }
 }
